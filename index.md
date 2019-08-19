@@ -6,57 +6,28 @@ layout: home
 # layout: default
 ---
 
-<h1>Problem sets</h1>
+# Problem sets
 
-<ul>
-{% for problem_set in site.problem_sets %}
-  <li>
-    <a href="{{ problem_set.url | relative_url }}">
-      {{ problem_set.title }}
-    </a>
-  </li>
-{% endfor %}
-</ul>
+{%- include problem_sets.md %}
 
 <hr>
 
-<h1>Labs</h1>
+# Labs
 
-<ul>
-{% for lab in site.labs %}
- <li>
-  <a href="{{ lab.url | relative_url }}">
-    {{ lab.title }}
-  </a>
- </li>
-{% endfor %}
-</ul>
+{%- include labs.md %}
 
 <hr>
 
-<h1>Final project</h1>
+# Final project
 
-[The final project]({{ site.baseurl }}{% link project.md %}), where we get to design
-cool games.
+[The final project]({{ site.baseurl }}{% link project.md %}), where we get
+to design cool games.
 
 <hr>
 
 <h1>Examples</h1>
 
-   * [Problem Set 1 example]({{ site.baseurl }}{% link /examples-static/pset1_sample.rkt %})
-
-{% for coll in site.collections %}
-{% if coll.label == "examples" %}
-<ul>
-{% for file in coll.files %}
-  <li><h3>
-    <a href="{{ file.url | relative_url }}">
-      {{ file.name }}
-    </a> - {{ file.url | relative_url }}
-  </h3></li>
+{% for example in site.examples %}
+[{{ example.title }}]({{ example.racket_path | relative_url }})
+: {{ example.content }}
 {% endfor %}
-</ul>
-{% endif %}
-{% endfor %}
-
-<hr>
