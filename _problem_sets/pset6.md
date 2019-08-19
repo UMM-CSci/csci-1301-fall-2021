@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: problem_set
 title:  "CSci 1301: Problem Set XXX"
 date:   2019-08-13 10:28:34 -0500
 categories: racket problem_set
