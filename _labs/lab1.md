@@ -2,7 +2,7 @@
 layout: lab
 title:  "Lab XXX"
 date:   2019-08-13 10:28:34 -0500
-categories: racket lab expressions functions
+tags: [expressions, functions]
 ---
 
 ### Prelude

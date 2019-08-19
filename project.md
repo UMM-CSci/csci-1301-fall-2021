@@ -1,9 +1,12 @@
 ---
 layout: assignment
-title:  "Final Project: Designing a game"
+title:  "Final Project"
 date:   2019-08-13 10:28:34 -0500
-categories: racket project game big-bang
+tags: [racket, project, game, big-bang]
 ---
+
+Here in the final project we'll work in groups to design (very simple)
+games in Racket.
 
 #### Total: 50 points + 10 points presentation + possible extra credit based on voting and extra features
 

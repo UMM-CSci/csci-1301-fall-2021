@@ -2,7 +2,7 @@
 layout: problem_set
 title:  "Problem Set XXX"
 date:   2019-08-13 10:28:34 -0500
-categories: racket problem_set expressions functions images strings
+tags: [expressions, functions, images, strings, check-expect]
 ---
 
 Please test all your programs carefully and include all the test cases
