@@ -32,6 +32,11 @@ layout: home
 {% endfor %}
 </ul>
 
+<h1>Final project</h1>
+
+[The final project]({% link project.md %}), where we get to design
+cool games.
+
 <hr>
 
 <h1>Examples</h1>
