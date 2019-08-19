@@ -11,7 +11,7 @@ layout: home
 <ul>
 {% for problem_set in site.problem_sets %}
   <li>
-    <a href="{{ problem_set.url }}">
+    <a href="{{ problem_set.url | relative_url }}">
       {{ problem_set.title }}
     </a>
   </li>
@@ -25,32 +25,34 @@ layout: home
 <ul>
 {% for lab in site.labs %}
  <li>
-  <a href="{{ lab.url }}">
+  <a href="{{ lab.url | relative_url }}">
     {{ lab.title }}
   </a>
  </li>
 {% endfor %}
 </ul>
 
+<hr>
+
 <h1>Final project</h1>
 
-[The final project]({% link project.md %}), where we get to design
+[The final project]({{ site.baseurl }}{% link project.md %}), where we get to design
 cool games.
 
 <hr>
 
 <h1>Examples</h1>
 
-   * [Problem Set 1 example]({% link /examples-static/pset1_sample.rkt %})
+   * [Problem Set 1 example]({{ site.baseurl }}{% link /examples-static/pset1_sample.rkt %})
 
 {% for coll in site.collections %}
 {% if coll.label == "examples" %}
 <ul>
 {% for file in coll.files %}
   <li><h3>
-    <a href="{{ file.url }}">
+    <a href="{{ file.url | relative_url }}">
       {{ file.name }}
-    </a> - {{ file.url }}
+    </a> - {{ file.url | relative_url }}
   </h3></li>
 {% endfor %}
 </ul>
