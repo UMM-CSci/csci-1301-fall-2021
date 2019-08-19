@@ -1,14 +1,9 @@
 ---
 layout: lab
-title:  "CSci 1301: Lab XXX"
+title:  "Lab XXX"
 date:   2019-08-13 10:28:34 -0500
 categories: racket lab
 ---
-
-CSci 1301: Lab 2
-----------------
-
-#### Due: Wednesday, September 26th at 11:59pm
 
 #### What to submit
 

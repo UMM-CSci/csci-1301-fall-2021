@@ -1,14 +1,9 @@
 ---
 layout: problem_set
-title:  "CSci 1301: Problem Set XXX"
+title:  "Problem Set XXX"
 date:   2019-08-13 10:28:34 -0500
 categories: racket problem_set
 ---
-
-CSci 1301: Problem Set 6
-------------------------
-
-#### Due: Wednesday, December 12 at 11:59pm
 
 You are required to write signatures and descriptions for all functions,
 and also descriptions of all your structures. Additionally, functions,

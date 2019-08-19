@@ -1,14 +1,9 @@
 ---
 layout: lab
-title:  "CSci 1301: Lab XXX"
+title:  "Lab XXX"
 date:   2019-08-13 10:28:34 -0500
 categories: racket lab
 ---
-
-CSci 1301: Lab 5
-----------------
-
-#### Due: Friday, November 2 at 11:59pm
 
 #### About this lab
 
@@ -33,7 +28,7 @@ otherwise:
           (check-expect (has-one-element? (list 2 3 5 6)) #false)
           (check-expect (has-one-element? empty) #false)
           (check-expect (has-one-element? (list 2)) #true)
-      
+
 
 **Question 2** Write a function `has-more-than-one-element?` that, given
 a list, returns `#true` if the list has more than one element, and
@@ -42,7 +37,7 @@ a list, returns `#true` if the list has more than one element, and
           (check-expect (has-more-than-one-element? (list 2 3 5 6)) #true)
           (check-expect (has-more-than-one-element? empty) #false)
           (check-expect (has-more-than-one-element? (list 2)) #false)
-      
+
 
 #### Task 2 (22 points)
 

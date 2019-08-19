@@ -1,14 +1,9 @@
 ---
 layout: problem_set
-title:  "CSci 1301: Problem Set XXX"
+title:  "Problem Set XXX"
 date:   2019-08-13 10:28:34 -0500
 categories: racket problem_set
 ---
-
-CSci 1301: Problem Set 5
-------------------------
-
-#### Due: Wednesday, Decemeber 5th at 11:59pm
 
 Please make sure that every function has a signature, description, and
 test cases (as needed).

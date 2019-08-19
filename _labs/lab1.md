@@ -1,14 +1,9 @@
 ---
 layout: lab
-title:  "CSci 1301: Lab XXX"
+title:  "Lab XXX"
 date:   2019-08-13 10:28:34 -0500
 categories: racket lab expressions functions
 ---
-
-CSci 1301: Lab 1
-----------------
-
-#### Due: Wednesday, September 12th at 11:59pm
 
 ### Prelude
 

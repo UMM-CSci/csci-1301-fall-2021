@@ -8,25 +8,29 @@ layout: home
 
 <h1>Problem sets</h1>
 
+<ul>
 {% for problem_set in site.problem_sets %}
-  <h2>
+  <li>
     <a href="{{ problem_set.url }}">
       {{ problem_set.title }}
     </a>
-  </h2>
+  </li>
 {% endfor %}
+</ul>
 
 <hr>
 
 <h1>Labs</h1>
 
+<ul>
 {% for lab in site.labs %}
- <h2>
+ <li>
   <a href="{{ lab.url }}">
     {{ lab.title }}
   </a>
- </h2>
+ </li>
 {% endfor %}
+</ul>
 
 <hr>
 

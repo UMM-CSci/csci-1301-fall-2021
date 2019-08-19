@@ -1,16 +1,11 @@
 ---
 layout: lab
-title:  "CSci 1301: Lab XXX"
+title:  "Lab XXX"
 date:   2019-08-13 10:28:34 -0500
 categories: racket lab
 ---
 
-CSci 1301: Lab 7
-----------------
-
-#### Due: Friday, November 30th at 11:59pm
-
-The lab is done in groups of 2 or 3.\
+The lab is done in groups of 2 or 3.
 Your goal is to explore abstraction by starting with two or three
 examples and generalizing to a function that takes another function as a
 parameter. Use examples on the [resources page](../resources.html) for
@@ -22,13 +17,13 @@ lambda** (even if you are not using `lambda`.
 Since we haven\'t spent much time on writing general signatures, you are
 not required to write them. However, correct signatures for the general
 functions in tasks 1 and 2 would give you **2 points of extra credit
-each** (and a good attempt would give you partial credit).\
+each** (and a good attempt would give you partial credit).
 Signatures for specific functions (for instance, functions that take a
 list of numbers) are **required**.
 
 #### Task 1: All elements satisfy a condition (10 points).
 
-1.  Write a fucntion takes a list of numbers and returns `#true` if all
+1.  Write a function takes a list of numbers and returns `#true` if all
     elements of the list are odd and `#false` otherwise. Make sure to
     test the function well.
 2.  Write a helper function take takes a string and returns `#true` if

@@ -1,14 +1,9 @@
 ---
 layout: problem_set
-title:  "CSci 1301: Problem Set XXX"
+title:  "Problem Set XXX"
 date:   2019-08-13 10:28:34 -0500
 categories: racket problem_set expressions functions images strings
 ---
-
-CSci 1301: Problem Set 2
-------------------------
-
-#### Due: Friday, September 28 at 11:59pm by e-mail
 
 Please test all your programs carefully and include all the test cases
 with your program. You must have at least 3 `check-expect` tests for

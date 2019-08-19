@@ -1,14 +1,9 @@
 ---
 layout: problem_set
-title:  "CSci 1301: Problem Set XXX"
+title:  "Problem Set XXX"
 date:   2019-08-13 10:28:34 -0500
 categories: racket problem_set
 ---
-
-CSci 1301: Problem Set 4
-------------------------
-
-#### Due: Monday, November 12th at 11:59pm
 
 Please make sure that every function has a signature, description, and
 test cases (as needed).
@@ -77,7 +72,7 @@ in the textbook and do the following exercises:
                     (check-expect (prefixes (list "a")) (list empty (list "a")))
                     ;; base case:
                     (check-expect (prefixes empty) (list empty))
-                
+
 
     -   The smallest list of letters (and the smallest prefix) is a
         one-letter list. Then your base case is when the list of letters
@@ -86,7 +81,7 @@ in the textbook and do the following exercises:
                     (check-expect (prefixes (list "a" "b" "c")) (list (list "a") (list "a" "b") (list "a" "b" "c")))
                     ;; base case:
                     (check-expect (prefixes (list "a")) (list (list "a")))
-                
+
 
     Both approaches have their challenges, but can be solved by
     carefully thinking of a solution in terms of the recursive case and
