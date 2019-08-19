@@ -6,4 +6,4 @@ racket_path: /examples-static/pset1_sample.rkt
 ---
 
 This provides examples of defining variables, using `check-expect`,
-and defining functions.
+and function definitions.
