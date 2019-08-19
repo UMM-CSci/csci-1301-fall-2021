@@ -41,6 +41,8 @@ cool games.
 
 <h1>Examples</h1>
 
+   * [Problem Set 1 example]({% link /examples-static/pset1_sample.rkt %})
+
 {% for coll in site.collections %}
 {% if coll.label == "examples" %}
 <ul>
