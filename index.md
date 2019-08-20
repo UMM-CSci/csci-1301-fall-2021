@@ -24,10 +24,3 @@ layout: home
 to design cool games.
 
 <hr>
-
-<h1>Examples</h1>
-
-{% for example in site.examples %}
-[{{ example.title }}]({{ example.racket_path | relative_url }})
-: {{ example.content }}
-{% endfor %}
