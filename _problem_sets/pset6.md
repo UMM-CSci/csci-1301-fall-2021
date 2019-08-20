@@ -22,7 +22,7 @@ given data and you don\'t know how to fix it.
 ### Self-referential structure (16 points total)
 
 1.  Given the `family tree` structure in defined in [Section
-    19.1](https://htdp.org/2018-01-06/Book/part_four.html#%28part._sec~3abtrees%29),
+    19.1](https://htdp.org/2019-02-24/part_four.html#%28part._sec~3abtrees%29),
     write a function `ft-has-color?` that takes a family tree and a
     color and returns true if that family tree has a person with that
     color of eyes, and false otherwise.

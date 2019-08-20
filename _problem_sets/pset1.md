@@ -14,17 +14,17 @@ See the Canvas site for examples of solving similar exercises.
 # Exercises
 
 Exercises [12 (3
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun1%29%29)
+pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._fun1%29%29)
 (do not define `csurface`), [14 (3
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun3%29%29),
+pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._fun3%29%29),
 [17 (4
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun10%29%29),
+pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._fun10%29%29),
 [18 (4
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun10a%29%29),
+pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._fun10a%29%29),
 [19 (4
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun10b%29%29)
+pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._fun10b%29%29)
 in [Section
-2.1](https://htdp.org/2018-01-06/Book/part_one.html#%28part._sec~3afuncs%29)
+2.1](https://htdp.org/2019-02-24/part_one.html#%28part._sec~3afuncs%29)
 In exercise 17 it\'s fine to implement just `tall` and `wide`, and not
 `square`.
 

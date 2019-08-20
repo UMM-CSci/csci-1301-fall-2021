@@ -17,15 +17,15 @@ See the Canvas site for examples of solving similar exercises.
 # Exercises
 
 Do these three exercises from
-[Chapter 1](https://htdp.org/2018-01-06/Book/part_one.html)
+[Chapter 1](https://htdp.org/2019-02-24/part_one.html)
 of the course text:
 
    * [Exercise 3 (3
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._arith-s1%29%29)
+pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._arith-s1%29%29)
    * [Exercise 4 (3
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._arith-s2%29%29)
+pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._arith-s2%29%29)
    * [Exercise 8 (5
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._arith-b2%29%29)
+pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._arith-b2%29%29)
       * In exercise 8 it\'s fine to implement just `tall` and `wide`, and not `square`.
 
 #### How to submit

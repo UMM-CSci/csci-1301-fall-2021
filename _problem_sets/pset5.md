@@ -11,7 +11,7 @@ test cases (as needed).
 ### Problem 1 (10 points)
 
 [Exercise
-250](https://htdp.org/2018-01-06/Book/part_three.html#%28counter._%28exercise._ex~3aabs-tabulate%29%29).
+250](https://htdp.org/2019-02-24/part_three.html#%28counter._%28exercise._ex~3aabs-tabulate%29%29).
 Before you write the function, copy `tab-sin` and `tab-sqrt` into your
 Racket file. Then:
 
@@ -34,14 +34,14 @@ Note that this function is similar to a predefined Racket function
 
 In this task you will be using `map` and `filter` general functions
 given
-[here](https://htdp.org/2018-01-06/Book/part_three.html#%28part._ch~3a3use%29)
+[here](https://htdp.org/2019-02-24/part_three.html#%28part._ch~3a3use%29)
 and [foldl,
-foldr](https://htdp.org/2018-01-06/Book/part_three.html#%28counter._%28figure._fig~3aisl-ho-list2%29%29)
+foldr](https://htdp.org/2019-02-24/part_three.html#%28counter._%28figure._fig~3aisl-ho-list2%29%29)
 to perform different tasks. You can use helper functions when the
 functions that you need you need to pass to `map` or `filter` aren\'t
 defined in Racket. Alternatively you may use `lambda` if you would like
 (see [section
-17.1](https://htdp.org/2018-01-06/Book/part_three.html#%28part._sec~3aint-lambda%29)
+17.1](https://htdp.org/2019-02-24/part_three.html#%28part._sec~3aint-lambda%29)
 in the book).
 
 You may use a combination of function for each problem.

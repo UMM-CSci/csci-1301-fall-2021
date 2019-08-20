@@ -19,18 +19,18 @@ passing.
 ### Problem 2
 
 Read the step-by-step design process in [section
-3.1](https://htdp.org/2018-01-06/Book/part_one.html#%28part._sec~3adesign-func%29).
+3.1](https://htdp.org/2019-02-24/part_one.html#%28part._sec~3adesign-func%29).
 Note that we write our examples as check-expects rather than in
 comments. Also note that we have skipped writing a stub for simple
 fucntions (you would want to do it for more complex ones when you are
 less certain about what may go into the expression in the function).
 
 Exercises [36 (5
-points)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._design3%29%29),
+points)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._design3%29%29),
 [37 (5
-points)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._design4%29%29),
+points)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._design4%29%29),
 [38 (5
-points)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._design5%29%29).
+points)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._design5%29%29).
 Make sure to follow all steps of the design recipe, phrase your
 \"expected cases\" as `check-expect` tests. Don\'t worry about an empty
 string for exercises 37 and 38 (but make sure that your signature is

@@ -16,7 +16,7 @@ followed by the lab number, such as `SmithLeeLab2.rkt`.
 
 Your task is to write a simple animation, something similar to (and
 building upon) the rocket landing example from
-[Prologue](https://htdp.org/2018-01-06/Book/part_prologue.html) which is
+[Prologue](https://htdp.org/2019-02-24/part_prologue.html) which is
 also posted on our [resources page](../resources.html). Also see an
 [example of an animation.](../examples/simple-animation.rkt)\
 Your animation may be constructed out of shapes, pictures, or a

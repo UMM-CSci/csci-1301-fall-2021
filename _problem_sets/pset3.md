@@ -11,11 +11,11 @@ test cases (as needed).
 ### Problems
 
 -   Exercise [51 (12
-    points)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._cond3%29%29).
+    points)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._cond3%29%29).
     The world state for this problem is the enumeration \"green\",
     \"yellow\", \"red\".
 -   Exercise [108 (12
-    points)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._pedestrian%29%29)
+    points)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._pedestrian%29%29)
     . There are different possibilities for the world state here. A
     convenient one is a number between 0 and 20 (think carefully about
     why it can\'t be just a number between 0 and 9).
