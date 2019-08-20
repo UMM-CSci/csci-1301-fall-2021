@@ -1,9 +1,12 @@
 ---
 layout: problem_set
-title:  "Problem Set 1"
+title:  "Problem Set 0"
 date:   2019-08-13 10:28:34 -0500
 tags: [expressions, functions, images, strings, check-expect]
 ---
+
+This is a simple set of exercises to give everyone some practice with the
+basics of Racket and the DrRacket development environment.
 
 Please test all your programs carefully and include all the test cases
 with your program. You must have a `check-expect` test for each
@@ -13,20 +16,17 @@ See the Canvas site for examples of solving similar exercises.
 
 # Exercises
 
-Exercises [12 (3
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun1%29%29)
-(do not define `csurface`), [14 (3
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun3%29%29),
-[17 (4
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun10%29%29),
-[18 (4
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun10a%29%29),
-[19 (4
-pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._fun10b%29%29)
-in [Section
-2.1](https://htdp.org/2018-01-06/Book/part_one.html#%28part._sec~3afuncs%29)
-In exercise 17 it\'s fine to implement just `tall` and `wide`, and not
-`square`.
+Do these three exercises from
+[Chapter 1](https://htdp.org/2018-01-06/Book/part_one.html)
+of the course text:
+
+   * [Exercise 3 (3
+pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._arith-s1%29%29)
+   * [Exercise 4 (3
+pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._arith-s2%29%29)
+   * [Exercise 8 (5
+pts)](https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._arith-b2%29%29)
+      * In exercise 8 it\'s fine to implement just `tall` and `wide`, and not `square`.
 
 #### How to submit
 
