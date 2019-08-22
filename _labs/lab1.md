@@ -1,87 +1,152 @@
 ---
 layout: lab
-title:  "Lab XXX"
+title:  "Lab 1"
 date:   2019-08-13 10:28:34 -0500
 tags: [expressions, functions]
 ---
 
-### Prelude
+In this lab we're going to work in groups of 2 or (in a few cases) 3, getting
+some hands-on experience with the [DrRacket programming environment](https://racket-lang.org)
+and exploring both the Racket language and the DrRacket environment.
+Before you can do that, though, you'll also need to learn a few things
+about using our computer science lab, so we'll start by getting you set up
+on our gear.
 
-#### Setup and changing your password
+# Getting set up in our lab
 
-Before you can start on the lab, you need to log in to a lab computer
-and change your password:
+While the "programming" part of the lab will be done in groups, we need
+_everyone_ to do some of the initial setup. In particular _everyone_ should
+be given a chance to login and change their password before groups get
+started on the lab exercises.
 
-Log in using your x500 (the usual university) login name and the
-password that follows the scheme that I will show in class.
+Before you can start on the lab, everyone needs to log in to a lab computer
+and change your password. Because there are more people than computers, groups
+will need to let everyone on a team take turns doing this part. **It's
+important that everyone get through this part, so be patient and help each
+other out.**
 
-Press the \"Windows\" key on your keyboard or click on Activities in the
-left upper corner of your screen.
+## Log in
 
-You can either search through a list of programs, or type in the search
-bar, to find the following programs (right-click on them once you found
-them, to add them to \"favorites\" in the Activities list):
+To log in you'll need a user name and a password:
 
--   A `terminal` (it serves as a command prompt)
--   DrRacket
--   Chrome (preferred) or another browser
+   * Your user name in our lab
+   is the same as your usual university login name, so use the same user
+   name you would use to log in to the unversity systems like e-mail and
+   Canvas. (Note that this *doesn't* include the `@morris.umn.edu` part.)
+   * Your initial password will follow a scheme described in class, and you'll
+   then change that as described below.
 
-Open the terminal window by double-clicking on it and type a command
-`passwd`. You will be prompted to type in your current password and then
+## REMEMBER TO LOGOUT!
+
+When you are done with your work at the end of the lab session (or just after
+changing your password), *don't forget to log out!* Click on
+the "power" button in the upper-right corner of your main monitor, then
+on the triangle by your name, then select "log out". If you don't log
+out, your account will be accessible to others and you may also have
+problems when you later try to log in to another machine in the lab.
+
+## Find some key programs
+
+Once you're logged in, you'll want to find three important programs
+that we'll use all semester long:
+
+   * A `terminal` (it serves as a command prompt)
+   * DrRacket
+   * A web browser; we have both Chrome and Firefox installed, and either
+     should work fine.
+
+To find one of these programs press the "Windows" key on your keyboard or click
+on "Activities" in the left upper corner of your screen. You can then use the
+search bar to find the program you're looking for. double-clicking on it should
+start it up, and if you right-click on it you can add it to your "favorites"
+in the Activities list so you won't have to search for it again in the future.
+
+## Changing your password
+
+Open a terminal window by double-clicking on the `terminal` program in
+"Activities". That terminal window should give you a prompt that will allow
+you to run commands, such as:
+
+   * `whoami` should print out your username
+   * `hostname` should show you the name of the computer you're sitting at
+   * `date` should show you the current date and time
+
+There are _bazillions_ of other commands, but we won't go over them here. If
+you're interested there are numerous good sources out there for learning more
+about Linux command line tools such as [this tutorial](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0) and [this video](https://www.youtube.com/watch?v=cBokz0LTizk), or
+even old-fashioned things like books.
+
+What we need to do right now, however, is change your password. Our CSci lab
+systems use an entirely separate login system from the U's other systems like
+e-mail, so changing your password in the lab doesn't have any impact on the U's
+system and vice versa. You _can_ choose to (for now) have the same password
+for both systems, but that's not required and they won't be kept in sync by
+either of the systems. Do make an effort to choose a reasonably secure password.
+A fairly secure method of generating a password you can actually remember later
+is to pick 4 unrelated words and run them together; an example (**which you
+shouldn't use**) might be `setup-beggar-peony-federal`.
+
+![XKCD on password strength](https://imgs.xkcd.com/comics/password_strength.png)
+
+To actually change your password type the command `passwd`.
+You will be prompted to type in your
+current password (the one following the pattern described in class) and then
 the new password twice. *For security reasons nothing shows on the
 screen as you are typing your password*. If you make a mistake, press
 Ctrl-C to stop the process and start over.
 
-Make sure to remember your new password, otherwise you wouldn\'t be able
-to log in next time you use the lab.
+**Make sure to remember your new password, otherwise you won't be able
+to log in next time you use the lab.** We can reset your password, but we can't
+ever tell you what your password actually is.
 
 If you encounter any problems (such as your login not working), please
-let me know right away.
+let us know right away.
 
-As you are working, open a browser (Chrome would be a good choice) and
-open the lab (this page) and Racket documentation linked from it, in
-separate tabs. Consult it as needed.
+# Get started in Racket
 
-Note that the picture of the file cabinet in Activities gets you to your
-file system. Create folders and subfolders as needed, to organize your
-files.
+After *everyone* in your group has changed their password, it's time to get
+started on the Racket part of the lab. One member of your group should be
+logged in, but it doesn't really matter which. Whoever is logged in should
+open a browser, and then bring up this lab. (You can either get the URL from
+us, or login to [Canvas](https://canvas.umn.edu) and go through the link there.
 
-Name your file with the combination of your last names, no spaces,
-followed by the word \"Lab\" and the lab number. For instance, if your
-last names are Smith and Lee, the file name should be `SmithLeeLab1.rkt`
-If there are others in the class with the same name as yours, you your
-initial in addition to your last name: `MSmithJLeeLab1.rkt`
+## Open some documentation
 
-When you are done with your work, *don\'t forget to log out!* Click on
-the \"on\" button in the right upper corner of your main monitor, then
-on the arrow by your name, then select \"log out\". If you don\'t log
-out, your account will be accessible to others and you may also have
-problems when you later try to log in to another machine in the lab.
+You should also open another few tabs with some bits of Racket documentation
+you'll likely find useful as you work on the lab:
 
-Even though you will be working in pairs or groups, every person needs
-to change their password before starting the lab.
+   * [The Racket "Beginning Student" language](https://docs.racket-lang.org/htdp-langs/beginner.html)
+      * This includes documentation of all the functions provided in that version of
+   Racket, including `check-expect` and things like `max` and `gcd` that are
+   part of exercises below.
+   * [The image library documentation](https://docs.racket-lang.org/teachpack/2htdpimage.html)
+      * This documents all the image manipulation and creation functions that
+      you'll need for some of the exercises below.
 
-#### Work in groups.
+## Organize your files (optional)
 
-The lab is done in groups of 2 or 3. You will use a pair-programming
-approach: one person is a \"driver\", i.e. types in program
-instructions, and the other person is a \"navigator\", i.e. guides the
-driver as to what to type and what to do next. The roles are switched
-every 10-15 minutes. For this lab it will be convenient to switch at the
-end of each exercise. If you are working in groups of three, the roles
-are: a \"driver\", a \"navigator\", and a \"quality control\" person.
-Again, make sure to switch frequently.
+The picture of a file cabinet in Activities opens a window that lets you
+see and manipulate the files in your home space. If you wish, you can use this
+to create folders and subfolders help organize your files. You could, for
+example, create a "CSci1301" folder for the files you'll generate in this
+course, or create a "Courses" folder and create "CSci1301" inside that.
 
-#### Starting DrRacket, organizing your files
+## Start DrRacket
 
-Start DrRacket from the Activities list. Make sure that the language is
-set to \"Beginning student\". If it\'s not, go to \"Language\" menu of
-DrRacket and set it. Also, if you have troubles accessing image
+If necessary, find DrRacket again (see above) and start it up.
+
+You may also start DrRacket by double-clicking on a Racket
+file, including one you download such as [example.rkt](../example.rkt) or
+one of the examples on Canvas.
+
+### Make sure language is set correctly
+
+Make sure that the language is
+set to "Beginning student". If it's not, go to the "Language" menu
+and choose "Beginning Student".
+Also, if you have troubles accessing image
 functions (in problem 3) then go to \"Language -\> Add Teachpack\" and
 add \"2htdp\\image.rkt\" *from the middle column*.
-
-You may also start DrRacket by double-clicking on a downloaded Racket
-file, such as [first.rkt](../examples/first.rkt)
 
 If you have accidentally added the teachpack from the first column, you
 will be getting error messages when using image functions such as
@@ -89,34 +154,32 @@ will be getting error messages when using image functions such as
 module has been imported twice. If this is happening, clear both
 `image.rkt` teachpacks and then add the one in the middle column.
 
+### Start the lab
+
+You will use a pair-programming
+approach: one person is a _driver_ at the keyboard and type in program
+instructions; and the other person is a _navigator_ and guides the
+driver by providing suggestions about what to type and what to do next.
+The roles should be switched
+every 10-15 minutes. For this lab it will be convenient to switch at the
+end of each exercise.
+
+If you are working in a group of three, the roles
+are: a _driver_, a _navigator_, and a _quality control_ person.
+Again, make sure to switch frequently.
+
 Start your lab by typing a comment in the beginning of the file with the
 lab number and the names (first and last) of all group members. Recall
-that Racket comments are lines that start with ; (a semicolon).
+that Racket comments are lines that start with `;` (a semicolon).
 
-You should create a folder for your work in this class, and possibly a
-subfolder for the lab so that you can keep each lab and each problem set
-in a separate folder. In order to save a file go to \"File -\> Save
-Definitions As\...\" and navigate to your folder. Make sure to save your
-file with the extension `.rkt`. After you\'ve done it once you can just
-use \"Save\" (or Ctrl-S) to save the file.
+In order to save a file go to "File -\> Save
+Definitions As…" and navigate to your folder. Make sure to save your
+file with the extension `.rkt`. After you've done it once you can just
+use "Save" (or Ctrl-S) to save the file.
 
-#### What to submit
-
-You may do all your work in one file or in separate ones, whichever you
-find more convenient. Make sure to submit all your files.
-
-At the end of the lab please send me and your group partner(s) all your
-Racket files as e-mail attachments. My e-mail is [elenam at
-morris.umn.edu]{.email}. The subject of your e-mail must be \"1301 Lab
-1\" followed by \"Final\" or \"Not final\", depending on whether this is
-a final submission or you are still working on it. If you need to finish
-it, make sure to set up a time with your group partner(s) to finish the
-lab.
-
-#### When to submit
-
-Due Wednesday, September 6, at 11:59pm. If you submit the final version
-during the lab, you are done.
+The lab below will have several parts. You may do all your work in one file,
+or you may do different parts in different files, whichever you
+find more convenient. Make sure to submit all your files, however.
 
 ### Problem 1: Infix to prefix conversion. (8 points)
 
@@ -127,9 +190,11 @@ Check your answers by running the program, or, even better, by using
 For instance, if are given `3 * (12/4 + 2)`, you rewrite it as a Racket
 expression as `(* 3 (+ (/ 12 4) 2))`. Run it to check the answer, or,
 better yet, figure out the answer before running the code, and use
-`check-expect` to check:
+`check-expect` to confirm your answer:
 
+```racket
     (check-expect (* 3 (+ (/ 12 4) 2)) 15)
+```
 
 Below are math expressions to write in Racket:
 
@@ -137,36 +202,50 @@ Below are math expressions to write in Racket:
 2.  `(3 + 2 + 7)/(11 - 1 - 4)`
 3.  `(3*(-2 +4))/(8/2 + sqrt(4))`
 4.  `cos(0) + sin(0)`, where `cos` and `sin` are the cosine and sine
-    functions, respectively. Racket uses `cos` and `sin` as function
-    names.
+    functions, respectively.
+       * `cos` and `sin` are both provided as functions in Racket; [see the
+       documentation for details](https://docs.racket-lang.org/reference/generic-numbers.html#%28part._.Trigonometric_.Functions%29).
 
 ### Problem 2: testing Racket functions. (9 points)
 
 Find out what the following Racket functions do by testing them on
-different arguments: `<=`, `max`, `gcd`.
+different arguments:
 
-For example, what happens if a function is applied to more than two
+   1. `<=`
+   2. `max`
+   3. `gcd`
+
+Questions you might explore include:
+
+   * What happens if a function is applied to more than two
 arguments? Fewer than two?
+   * What kinds of arguments are acceptable? Numbers? Strings? Booleans? Images?
 
-Please submit all of the tests that you tried in order to determine what
-the function does. Explain your findings in comments. You may read the
+Document your experiments and conclusions in your ".rkt" file.
+Include all of tests that you tried as you worked to determine what
+the function does. If you try an experiment that leads to an error, leave that
+experiment in your write-up, but put that expression in a comment so it
+doesn't break things when you run your file.
+
+Explain your findings in comments. You may read the
 function descriptions
-[here](http://docs.racket-lang.org/htdp-langs/beginner.html) if you
-would like, but the descriptions of the functions that you submit for
-the lab must be your own.
+[in the on-line documentation](http://docs.racket-lang.org/htdp-langs/beginner.html)
+if you would like, but the descriptions of the functions that you submit.
 
 ### Problem 3: creating a shape. (8 points)
 
-Your task is to use functions in
-[image.rkt](http://docs.racket-lang.org/teachpack/2htdpimage.html)
-teachpack to create a red shape that has a side of 200 pixels and looks
-like this:
+Your task is to use functions in the
+`image.rkt` teachpack
+to create a particular shape. [The on-line documentation for `image.rkt`](http://docs.racket-lang.org/teachpack/2htdpimage.html) should be useful.
 
-![](lab1.jpg)
+The target shape is 200 pixels on each side and looks like this:
+
+![Target image for Problem 3 of Lab 1](../assets/images/lab1.png)
 
 There are different ways of creating this shape. Some functions that you
-may find helpful are:
-`square`, `triangle`, `right-triangle`, `rectangle`, `rhombus`, `rotate`, `overlay`, `beside`, `above`.
+may find helpful include:
+`square`, `triangle`, `right-triangle`, `rectangle`, `rhombus`, `rotate`,
+`overlay`, `beside`, and `above`.
 
 Use variable as you find useful. For example, if you are using an image
 more than once, you might want to save it in a variable. Good use of
@@ -182,29 +261,9 @@ because a few pixels are off by a wee bit.
 
 ### Problem 4: explore Racket. (6 points)
 
-Test three \"what if\" questions of your choice in Racket. For example,
-you might want to try applying + function to strings. Write down what
+Test three "what if" questions of your choice in Racket. For example,
+you might want to try applying the `+` function to strings. Write down what
 you think is going to happen, test it, and write down if that was what
 you expected. If an expression that you test results in an error,
-comment it out before you move on to the next one.
-
-------------------------------------------------------------------------
-
-#### How to submit
-
-Make sure that your file is named correctly:\
-Name your file with the combination of your last names, no spaces,
-followed by the word \"Lab\" and the lab number. For instance, if your
-last names are Smith and Lee, the file name should be `SmithLeeLab1.rkt`
-If there are others in the class with the same name as yours, you your
-initial in addition to your last name: `MSmithJLeeLab1.rkt`
-
-At least one person in the group must submit it via canvas as a file
-upload (make sure it\'s that `.rkt` file). Make a comment indicating who
-you worked with. The other person (or people) in the group may submit
-the same file and also indicate who was in the group or just make a
-comment listing all your group members (note: if you don\'t submit a
-note listing your group members, your work may not be counted, even if
-your group partners list you as the group member).
-
-[CSci 1301 course web site](../index.html).
+comment it out before you move on to the next one so it won't break things
+when you (or we) run your file.
