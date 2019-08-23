@@ -10,7 +10,7 @@
 (define (double x) (* 2 x))
 
 ;;; A function that quadruples its input
-;;; quadruple number -> number
+;;; quadruple: number -> number
 (check-expect (quadruple 0) 0)
 (check-expect (quadruple 5) 20)
 (check-expect (quadruple -12) -48)
