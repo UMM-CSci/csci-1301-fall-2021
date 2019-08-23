@@ -63,6 +63,10 @@ in the Activities list so you won't have to search for it again in the future.
 
 ## Changing your password
 
+**We will check that you've changed your passwords**, and your group will receive
+or lose points depending on whether *everyone* in the group has changed their
+passwords.
+
 Open a terminal window by double-clicking on the `terminal` program in
 "Activities". That terminal window should give you a prompt that will allow
 you to run commands, such as:
