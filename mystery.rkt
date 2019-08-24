@@ -2,8 +2,13 @@
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname mystery) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp")) #f)))
 ; The definition of `mystery`
+; I have this all crammed on one stupidly long line (which makes it
+; *entirely* unreadable because I want to be able to control what happens
+; when there are errors and DrRacket highlights those errors. I need to
+; keep this on one line so I can ensure that it doesn't reveal the definition
+; in the video when there are errors.
 
-(define (mystery s i)(cond[(not (string? s))(error (string-append"mystery: expected a string for the first argument, but received " (format "~a" s)))][(not (integer? i)) (error (string-append "mystery: expected a natural number for the second argument, but received \"" (format "~a" i) "\""))][(or (not (integer? i)) (negative? i) (>= i (string-length s)))(error (string-append "mystery: expected an exact integer in [0, " (number->string (string-length s)) ") (i.e., less than the length of the given string) for the second argument, but received " (format "~a" i)))] [else (string (string-ref s i))]))
+(define (mystery s i)(cond[(not (string? s))(error (string-append "mystery: expected a string for the first argument, but received " (format "~a" s)))][(not (integer? i)) (error (string-append "mystery: expected a natural number for the second argument, but received \"" (format "~a" i) "\""))][(or (not (integer? i)) (negative? i) (>= i (string-length s)))(error (string-append "mystery: expected an exact integer in [0, " (number->string (string-length s)) ") (i.e., less than the length of the given string) for the second argument, but received " (format "~a" i)))] [else (string (string-ref s i))]))
 
 ; Our "lab notes"
 
