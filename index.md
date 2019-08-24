@@ -18,6 +18,10 @@ layout: home
 
 <hr>
 
+{%- include videos.md %}
+
+<hr>
+
 # Final project
 
 [The final project]({{ site.baseurl }}{% link project.md %}), where we get
