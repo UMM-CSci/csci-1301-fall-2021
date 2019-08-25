@@ -18,6 +18,8 @@ layout: home
 
 <hr>
 
+# Videos
+
 {%- include videos.md %}
 
 <hr>
