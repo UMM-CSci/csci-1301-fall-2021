@@ -16,8 +16,8 @@
 title: UMM CSci 1301, Fall 2019
 email: mcphee@morris.umn.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  CSci 1301 is pretty cool. We could put the catalog description here,
-  or I could try to write something zippier.
+  Problem sets, labs, and other materials for the Fall, 2019, edition of
+  CSci 1301 at the University of Minnesota Morris.
 baseurl: "/csci-1301-fall-2019" # the subpath of your site, e.g. /blog
 url: "http://https://umm-csci.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: NicMcPhee

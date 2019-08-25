@@ -4,15 +4,18 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+These are the problem sets, labs, and other materials for the Fall, 2019,
+edition of
+[CSci](https://academics.morris.umn.edu/majorminor-planning-tips/computer-science)
+1301 at the [University of Minnesota Morris](https://www.morris.umn.edu).
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+The course description:
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+> Introduction to different problem solving approaches, major programming paradigms, hardware, software, and data representations. Study of the functional programming paradigm, concentrating on recursion and inductively-defined data structures. Simple searching and sorting algorithms.
 
+Most of this material was
+[initially written by Elena Machkasova](http://cda.morris.umn.edu/~elenam/1301fall2018/)
+and then converted to GitHub Pages and updated by [@NicMcPhee](https://github.com/NicMcPhee).
 
-[jekyll-organization]: https://github.com/jekyll
+The source for this is at
+[https://github.com/UMM-CSci/csci-1301-fall-2019](https://github.com/UMM-CSci/csci-1301-fall-2019).
