@@ -4,8 +4,11 @@
 
 layout: home
 # layout: default
-title: UMM CSci 1301, Fall 2019
+# title: UMM CSci 1301, Fall 2019
 ---
+
+Welcome to the problem sets and labs for UMM CSci 1301,
+Fall 2019!
 
 # Problem sets
 
