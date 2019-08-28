@@ -1,8 +1,9 @@
 ---
 layout: lab
-title:  "Lab XXX"
+title:  "Lab 7"
 date:   2019-08-13 10:28:34 -0500
 categories: racket lab
+status: draft
 ---
 
 The lab is done in groups of 2 or 3.

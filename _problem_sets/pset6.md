@@ -1,8 +1,9 @@
 ---
 layout: problem_set
-title:  "Problem Set XXX"
+title:  "Problem Set 6"
 date:   2019-08-13 10:28:34 -0500
 categories: racket problem_set
+status: draft
 ---
 
 You are required to write signatures and descriptions for all functions,

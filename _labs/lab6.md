@@ -1,8 +1,9 @@
 ---
 layout: lab
-title:  "Lab XXX"
+title:  "Lab 6"
 date:   2019-08-13 10:28:34 -0500
 categories: racket lab
+status: draft
 ---
 
 #### What to submit
