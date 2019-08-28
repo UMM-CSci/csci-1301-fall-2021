@@ -14,28 +14,24 @@ This is a 4 credit course which meets MWF 10:30-11:35am, in Sci 2200.
 There are no pre-requisites for this course and we will not assume any
 prior experience with computer programming.
 
--   [Course description](#Course_description)
--   [Course goals and learning
-    objectives](#Course_goals_and_learning_object)
--   [Nic\'s Fall 2015 office hours](#Nic_s_Fall_2015_office_hours)
--   [Nic\'s contact info](#Nic_s_contact_info)
--   [Texts and other materials](#Texts_and_other_materials)
--   [Course outline](#Course_outline)
--   [Course work and grading](#Course_work_and_grading)
-    -   [Grading standards (definition of
-        grades)](#Grading_standards_definition_of)
-    -   [Senate academic workload
-        policy](#Senate_academic_workload_policy)
--   [General information](#General_information)
-    -   [Student privacy](#Student_privacy)
-    -   [Academic assistance](#Academic_assistance)
-    -   [Accessibility and institutional
-        support](#Accessibility_and_institutional)
-    -   [Harassment](#Harassment)
-    -   [Regarding academic integrity](#Regarding_academic_integrity)
-    -   [Regarding classroom conduct](#Regarding_classroom_conduct)
-    -   [Some relevant University Senate statements and
-        policies](#Some_relevant_University_Senate)
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Course description](#course-description)
+- [Course goals and learning objectives](#course-goals-and-learning-objectives)
+- [Nic's Fall, 2019, office hours](#nics-fall-2019-office-hours)
+- [Nic's contact info](#nics-contact-info)
+- [Texts and other materials](#texts-and-other-materials)
+- [Course outline](#course-outline)
+- [Course work and grading](#course-work-and-grading)
+	- [Grading standards (definition of grades)](#grading-standards-definition-of-grades)
+	- [Senate academic workload policy](#senate-academic-workload-policy)
+- [General policies and information](#general-policies-and-information)
+	- [Accessibility and institutional support](#accessibility-and-institutional-support)
+	- [Harassment](#harassment)
+	- [Equity, diversity, equal opportunity, and affirmative action](#equity-diversity-equal-opportunity-and-affirmative-action)
+	- [Academic Integrity](#academic-integrity)
+
+<!-- /TOC -->
 
 # Course description
 
@@ -153,7 +149,7 @@ This course has 1 required text:
 
 -   *How to design programs, SECOND EDITION* (often abbreviated HtDP2e) by Felleisen, Findler, Flatt, and Krishnamurthi
     -   This is available freely on-line, and this edition is *only*
-        available on-line: https://htdp.org/2019-02-24/
+        available on-line: <https://htdp.org/2019-02-24/>
     -   :warning: **Don\'t buy a printed copy of the first edition
         unless you really want to.** The second edition is *very*
         different, and the course really won\'t make a lot of sense is
@@ -245,7 +241,7 @@ address them.
 can be overwritten in case of illness and other unavoidable delays, but you'll
 need to contact me promptly to address such cases.
 
-# Grading standards (definition of grades)
+## Grading standards (definition of grades)
 
 [According to University of Minnesota policy](https://policy.umn.edu/education/gradingtranscripts):
 
@@ -264,25 +260,25 @@ need to contact me promptly to address such cases.
 
 By default I will use the University Minnesota Letter Grade Scheme:
 
- * A: 100% to 93%
- * A-: <93% to 90%
- * B+: <90% to 87%
- * B: <87% to 83%
- * B-: <83% to 80%
- * C+: <80% to 77%
- * C: <77% to 73%
- * C-: <73% to 70%
- * D+: <70% to 67%
- * D: <67% to 60%
- * F: <60% to 0%
+*   A: 100% to 93%
+*   A-: <93% to 90%
+*   B+: <90% to 87%
+*   B: <87% to 83%
+*   B-: <83% to 80%
+*   C+: <80% to 77%
+*   C: <77% to 73%
+*   C-: <73% to 70%
+*   D+: <70% to 67%
+*   D: <67% to 60%
+*   F: <60% to 0%
 
-I will never be _less_ generous than this, but I may be _more_ generous
+I will never be *less* generous than this, but I may be *more* generous
 depending on the clustering and gaps in the grades. If, for example,
 there's a dense cluster
-from 88.5% to 86% followed by a gap, I _might_ extend the B+ range down to 86%.
+from 88.5% to 86% followed by a gap, I *might* extend the B+ range down to 86%.
 I make no promises that I will make such shifts, but it could happen.
 
-# Senate academic workload policy
+## Senate academic workload policy
 
 For undergraduate courses, one credit is defined as equivalent to an
 average of three hours of learning effort per week (over a full
@@ -305,7 +301,7 @@ The University of Minnesota views disability as an important aspect of diversity
    * If you are registered with the DRC and have a disability accommodation letter dated for this semester or this year, please contact your instructor early in the semester to review how the accommodations will be applied in the course.
    * If you are registered with the DRC and have questions or concerns about your accommodations please contact the Coordinator of the Disability Resource Center.
 
-Additional information is available on the DRC website: https://academics.morris.umn.edu/office-academic-success/disability-resource-center, or e-mail `hoekstra@…`.
+Additional information and contact information is available on the DRC website: <https://academics.morris.umn.edu/office-academic-success/disability-resource-center>, or you can go visit then in the Library.
 
 ## Harassment
 
