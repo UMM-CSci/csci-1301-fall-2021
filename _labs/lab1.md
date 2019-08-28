@@ -251,7 +251,7 @@ may find helpful include:
 `square`, `triangle`, `right-triangle`, `rectangle`, `rhombus`, `rotate`,
 `overlay`, `beside`, and `above`.
 
-Use variable as you find useful. For example, if you are using an image
+Use variables as you find useful. For example, if you are using an image
 more than once, you might want to save it in a variable. Good use of
 variables is one of the criteria used for evaluating your work.
 
