@@ -5,6 +5,10 @@
 layout: home
 # layout: default
 # title: UMM CSci 1301, Fall 2019
+attribution: >
+  <a href="http://cda.morris.umn.edu/~elenam/1301fall2018/index.html">
+    Originally written by @elenam</a>,
+  with subsequent modifications by @NicMcPhee
 ---
 
 Welcome to the problem sets and labs for UMM CSci 1301,
@@ -34,3 +38,5 @@ Fall 2019!
 to design cool games.
 
 <hr>
+
+<p class="attribution">{{ page.attribution }}</p>
