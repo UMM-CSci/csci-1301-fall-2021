@@ -32,7 +32,7 @@ Fall 2019!
 
 <hr>
 
-# Final project
+# Final project -- DRAFT
 
 [The final project]({{ site.baseurl }}{% link project.md %}), where we get
 to design cool games.

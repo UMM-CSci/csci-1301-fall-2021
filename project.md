@@ -5,6 +5,16 @@ date:   2019-08-13 10:28:34 -0500
 tags: [racket, project, game, big-bang]
 ---
 
+<div class="draft_notice">
+  <h1>THIS IS A DRAFT</h1>
+  <p>
+    The basics of this are probably correct, but the details could change
+    before this "goes live". Definitely ask if you feel
+    that there's something that shouldn't be in "draft" status anymore.
+  </p>
+</div>
+<hr>
+
 Here in the final project we'll work in groups to design (very simple)
 games in Racket.
 
