@@ -5,6 +5,18 @@ attribution: >
     Originally written by @elenam</a>,
   with subsequent modifications by @NicMcPhee
 ---
+{% if page.status == "draft" %}
+<div class="draft_notice">
+  <h1>THIS IS A DRAFT</h1>
+  <p>
+    The basics of this are probably correct, but the details could change
+    before the assignment or lab "goes live". Definitely ask if you feel
+    that there's something that shouldn't be in "draft" status anymore.
+  </p>
+</div>
+<hr>
+{% endif %}
+
 {{ content }}
 
 <hr>

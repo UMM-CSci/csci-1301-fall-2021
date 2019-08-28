@@ -2,6 +2,12 @@
   font-style: italic;
 }
 
+.draft_notice {
+  font-weight: bold;
+  text-align: center;
+  margin: 3rem;
+}
+
 dl dt {
   // font-weight: bold;
 }
