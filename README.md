@@ -5,4 +5,4 @@ Web presence for Fall 2018 edition of CSci 1301 at the [University of Minnesota,
 These materials were initially generated over several years by @elenam
 [as "raw" HTML files](http://cda.morris.umn.edu/~elenam/1301fall2018/index.html).
 @mcphee then converted the materials from HTML to Markdown with pandoc, and then
-stuffed everything into a Jekyll install for deployment on GitHub Pages.
+stuffed everything into a Jekyll install for deployment [on GitHub Pages](https://umm-csci.github.io/csci-1301-fall-2019/).
