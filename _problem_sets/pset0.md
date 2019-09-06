@@ -34,8 +34,8 @@ In all three of these the essential idea is to define named expressions, like
 `x` and `y` defined by
 
 ```racket
-(def x 7)
-(def y 5)
+(define x 7)
+(define y 5)
 ```
 
 and then use those named expressions to
