@@ -36,4 +36,3 @@ pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._fun10%2
 pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._fun10a%29%29),
    * [Exercise 19 (4
 pts)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._fun10b%29%29)
-in
