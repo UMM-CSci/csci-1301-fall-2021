@@ -206,8 +206,8 @@ to me as soon as possible and arrange for a make-up work.
 There will be two exams (which may be a combination of
 in-class and take-home), and a final exam (which
 may also combine in-class and take-home). The in-class part of the first exam
-will be on Monday, 22 September. The in-class part of the second exam will be
-on Monday, 27 October. The in-class finals period is scheduled for Friday,
+will be on Monday, 30 September. The in-class part of the second exam will be
+on Monday, 28 October. The in-class finals period is scheduled for Friday,
 19 December, from 8:30-10:30am.
 
 Key elements for any work in this course (and arguably any work in most
