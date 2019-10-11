@@ -56,6 +56,9 @@ Your tasks are as follows:
     `move-to-start` as a guide for what needs to be done. Make sure 
     you uncomment the `check-expect` tests. Also make sure you
     uncomment the line in
-    the definition of `main` (where `big-bang` is called) that uses registers `move-to-start` as a mouse handler. Test your program.
+    the definition of `main` (where `big-bang` is called) that uses 
+    registers `move-to-start` as a mouse handler. Test your program.
 7.  Change the rendering so that once the ball
-    is on the ground, it displays the `broken-ball` image instead of the `ball` image. This will also require a conditional.
+    is on the ground, it displays the `broken-ball` image instead of the `ball` image; 
+    this will also require a conditional. You should also add at least one new 
+    `check-expect` test to `render` that tests this new functionality.
