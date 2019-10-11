@@ -51,6 +51,7 @@ Your tasks are as follows:
     `within-radius?` helper function uses the `distance`. You 
     might want to look up [the formula for distance between 
     two points](https://www.wikihow.com/Find-the-Distance-Between-Two-Points).
+    See the figure below for examples.
 6.  Write the `move-to-start` function using `within-radius?` 
     as a helper function. Use the comments and tests for 
     `move-to-start` as a guide for what needs to be done. Make sure 
@@ -62,3 +63,8 @@ Your tasks are as follows:
     is on the ground, it displays the `broken-ball` image instead of the `ball` image; 
     this will also require a conditional. You should also add at least one new 
     `check-expect` test to `render` that tests this new functionality.
+
+The following figure illustrates the ideas behind both `distance` and
+`withing-radius?`:
+
+![Illustration of `distance` and `within-radius?`](../assets/images/lab3.png)
