@@ -40,7 +40,7 @@ Your tasks are as follows:
     `check-expect` tests, fill in the right expression, and run the program to
     test. The ball doesn't (for now) need to stop at the bottom of the canvas.
 4.  Change the `fall` function so that once the ball reaches the ground
-    (see `ground-size` constant), it stops falling and remains at the
+    (the `ground-size` constant might be useful), it stops falling and remains at the
     same position. That requires making `fall` into an `if` or a
     `cond`. Add one or two new `check-expect` tests for `fall` that
     check for appropriate behavior in this case.
