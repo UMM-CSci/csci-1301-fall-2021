@@ -67,4 +67,4 @@ Your tasks are as follows:
 The following figure illustrates the ideas behind both `distance` and
 `withing-radius?`:
 
-![Illustration of `distance` and `within-radius?`](../assets/images/lab3.png)
+![Illustration of `distance` and `within-radius?`](../assets/images/Lab_3.png)
