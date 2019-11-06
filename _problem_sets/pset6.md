@@ -1,7 +1,7 @@
 ---
 layout: problem_set
 title:  "Problem Set 6"
-date:   2019-08-13 10:28:34 -0500
+date:   2019-12-01 10:28:34 -0500
 categories: racket problem_set
 status: draft
 ---

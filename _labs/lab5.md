@@ -1,7 +1,7 @@
 ---
 layout: lab
 title:  "Lab 5"
-date:   2019-08-13 10:28:34 -0500
+date:   2019-11-19 10:28:34 -0500
 categories: racket lab
 status: draft
 ---
