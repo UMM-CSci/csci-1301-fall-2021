@@ -6,43 +6,34 @@ categories: racket problem_set
 status: draft
 ---
 
-Please make sure that every function has a signature, description, and
-test cases (as needed).
+## Background
 
-### Problem 1
+Read [Chapter 9 of the book,](https://htdp.org/2019-02-24/part_two.html#%28part._ch~3adesign-lists%29)
+paying attention to the [design recipe for lists](https://htdp.org/2019-02-24/part_two.html#%28counter._%28figure._fig~3atemplate-q%29%29)
+which summarizes and rephrases the same thing we were discussing in
+class.
 
-Read [Chapter 9 of the
-book,](https://htdp.org/2019-02-24/part_two.html#%28part._ch~3adesign-lists%29)
-paying attention to the [design recipe for
-lists](https://htdp.org/2019-02-24/part_two.html#%28counter._%28figure._fig~3atemplate-q%29%29)
-(it summarizes and rephrases the same thing we were discussing in
-class).\
-Then do the following problems, including the check-expect tests,
-signatures, descriptions, and then the implementation:
+Make sure that every function has a signature, description, and test cases (as needed).
 
-1.  [Exercise
-    140](https://htdp.org/2019-02-24/part_two.html#%28counter._%28exercise._list-and%29%29)
-    (5 points).
-2.  A function that takes a list of strings and produces the sum of
-    their lengths (5 points).
-3.  A function that takes a list of positions and another position
-    (let\'s call it X) and produces the sum of distances from each of
-    the positions on the list to X (5 points). Hint: write and use a
-    helper `distance` function (think of what its signature would be).
+## Essentially `and` and `or` for lists
 
-### Problem 2
+1. Start with [Exercise 140](https://htdp.org/2019-02-24/part_two.html#%28counter._%28exercise._list-and%29%29)
+from the course text. There are two functions to define here –
+`all-true` and `one-true` – make sure you do them both.
 
-1.  [Exercise
-    169](https://htdp.org/2019-02-24/part_two.html#%28counter._%28exercise._work3%29%29)
-    (5 points)
-2.  [Exercise
-    170](https://htdp.org/2019-02-24/part_two.html#%28counter._%28exercise._work4%29%29)
-    (5 points)
-3.  Write a function that takes a list of strings and returns a list of
-    their length (3 points).
-4.  Write a function that takes a list of strings and returns a list of
-    all strings on that list that don\'t start with a lower-case or
-    upper-case \"a\" (3 points).
+## Filtering lists
+
+A common activing is _filtering_, where we take a list and
+return a subset of that list, only keeping the elements that
+satisfy some property. Here we'll have two problems that
+are examples of filtering.
+
+2. [Exercise 169](https://htdp.org/2019-02-24/part_two.html#%28counter._%28exercise._work3%29%29), where you
+  keep `posn`s that match a criteria.
+3. Write a function that takes a list of strings and returns a list
+  containing the *non-empty* strings.
+
+
 
 ### Problem 3
 
