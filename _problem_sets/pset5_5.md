@@ -1,38 +1,15 @@
 ---
 layout: problem_set
-title:  "Problem Set 5"
-date:   2019-11-18 10:28:34 -0500
+title:  "Problem Set 5.5"
+date:   2019-11-21 10:28:34 -0500
 categories: racket problem_set
 status: draft
 ---
 
-For all these, make sure that every function has a
-signature, description, and test cases (as needed).
+Please make sure that every function has a signature, description, and
+test cases (as needed).
 
-## Abstracting away duplication
-
-[Exercise 238](https://htdp.org/2019-02-24/part_three.html#%28counter._%28exercise._ex~3aabs-min-max%29%29)
-
-Call your abstraction function `extremum`. Before you
-write your abstraction, copy the definitions of `inf`
-and `sup` into your Racket file. Then:
-
-- Write `check-expect` tests for `inf` and `sup`.
-- Write a description and signature for `extremum`.
-- Write `check-expect` tests for `extremum` that show how it
-  could be used to compute the same things you computed in
-  your tests for `inf` and `sup`.
-- Write the abstract function `extremum` and test it.
-
-You do _not_ need to 
-
-
-Make sure you write some good tests here. I'd in fact write the
-the tests first and make sure they pass with the original code
-_before_ you abstract out the shared logic in the two given
-functions.
-
-## Tabulating data
+### Problem 1 (10 points)
 
 [Exercise
 250](https://htdp.org/2019-02-24/part_three.html#%28counter._%28exercise._ex~3aabs-tabulate%29%29).
