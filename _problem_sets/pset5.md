@@ -11,27 +11,6 @@ signature, description, and test cases (as needed).
 
 ## Abstracting away duplication
 
-### Finding extremes
-
-[Exercise 238](https://htdp.org/2019-02-24/part_three.html#%28counter._%28exercise._ex~3aabs-min-max%29%29)
-
-Call your abstraction function `extremum`. Before you
-write your abstraction, copy the definitions of `inf`
-and `sup` into your Racket file. Then:
-
-1. Write `check-expect` tests for `inf` and `sup`.
-2. Write a description and signature for `extremum`.
-3. Write `check-expect` tests for `extremum` that show how it
-  could be used to compute the same things you computed in
-  your tests for `inf` and `sup`.
-4. Write the abstract function `extremum` and test it.
-
-🛑 You do _not_ need to do any of the "performance" parts of the
-problem, i.e., you can ignore everything from
-"Why are these functions slow…" forward.
-
-### Tabulating data
-
 [Exercise 250](https://htdp.org/2019-02-24/part_three.html#%28counter._%28exercise._ex~3aabs-tabulate%29%29).
 Before you write the function, copy `tab-sin` and `tab-sqrt` into your
 Racket file. Then:
