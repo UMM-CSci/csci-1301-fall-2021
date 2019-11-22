@@ -1,9 +1,8 @@
 ---
 layout: problem_set
 title:  "Problem Set 5"
-date:   2019-11-18 10:28:34 -0500
+date:   2019-11-20 10:28:34 -0500
 categories: racket problem_set
-status: draft
 ---
 
 For all these, make sure that every function has a
