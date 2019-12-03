@@ -247,6 +247,46 @@ use named constants like `cell-radius` and `padding` to build the
 relevant numbers. If you have questions about this definitely ask
 ASAP.
 
+To understand the math behind the numbers in the tests, it might
+help to look at a diagram:
+
+![Math for the placement of cells in the display](../assets/images/math-for-game-of-life-display.png)
+
+Here the center of cell (0, 0) will be
+
+```
+   (world-padding, world-padding)
+```
+
+since that's how far we need to shift that first cell over and down. In the write-up the value of `world-padding` is 20, so that means the center of this cell will be (20, 20).
+
+For other cells, we want to shift over/down by multiples of `cell-size` based on the `posn-x` and `posn-y` of the cell. The x-coordinate of the center of the cell at (2, 3), for example, will be:
+
+```racket
+   world-padding + 2 * cell-size
+```
+
+Using the values given in the write-up this will be
+
+```racket
+   20 + 2 * 5 = 20 + 10 = 30
+```
+
+Similarly the y-coordinate will be
+
+```racket
+   world-padding + 3 * cell-size = 20 + 3 * 5 = 20 + 15 = 35
+```
+
+This is where the 30 and 35 come from in the first `check-expect`
+for `place-cell`.
+
+Make sure you use the named constants (e.g., `world-padding`)
+and not the "raw" numbers (e.g., 20) when implementing
+`place-cell`. You want to be able to change the value of things
+like `world-padding` and have the whole drawing system update
+accordingly.
+
 ### Exercise 2:`draw-world`
 
 ![The Racket icon](../favicon-32x32.png)
