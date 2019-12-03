@@ -247,6 +247,14 @@ use named constants like `cell-radius` and `padding` to build the
 relevant numbers. If you have questions about this definitely ask
 ASAP.
 
+⚠️ I'm using the color `"blue"` for my circles, so you'll need to
+use `"blue"` as well to get these tests to pass. One could argue
+that I should have added another named constant for that color
+instead of scattering the "magic string" `"blue"` all over the
+code. Alternatively I could have written a `draw-cell` function
+that encapsulates both `"solid"` and `"blue"` so they're only
+in one place. I'll save that for another day.
+
 To understand the math behind the numbers in the tests, it might
 help to look at a diagram:
 
