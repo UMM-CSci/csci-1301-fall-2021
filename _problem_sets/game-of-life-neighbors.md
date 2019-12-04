@@ -33,6 +33,13 @@ description from the problem statement. If you're not
 sure what the signature should be for a given function,
 _definitely ask_.
 
+- [Shifting a cell/posn](#shifting-a-cellposn)
+  - [Exercise 1:`shift-cell`](#exercise-1shift-cell)
+  - [Exercise 2: `shift-cell-list`](#exercise-2-shift-cell-list)
+- [Generating neighbors](#generating-neighbors)
+  - [Exercise 3: `generate-neighbors`](#exercise-3-generate-neighbors)
+  - [Exercise 4: `all-neighbors`](#exercise-4-all-neighbors)
+
 ## Shifting a cell/posn
 
 A useful tool for this and several other parts of the
