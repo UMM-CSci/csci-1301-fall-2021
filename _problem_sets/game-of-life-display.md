@@ -1,6 +1,6 @@
 ---
 layout: problem_set
-title:  "Game of Life display"
+title:  "Game of Life 1: Display"
 date:   2019-11-29 11:28:34 -0500
 ---
 
