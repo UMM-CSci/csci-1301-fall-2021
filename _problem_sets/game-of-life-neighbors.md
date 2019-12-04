@@ -169,3 +169,114 @@ Given this list of cells and counts, we can
 That would then lead to the following state:
 
 ![The next generation: A block](../assets/images/Next_gen_block.png)
+
+### Exercise 3: `generate-neighbors`
+
+![The Racket icon](../favicon-32x32.png)
+Write a function `generate-neighbors` that takes a
+cell/posn and returns a list of cells/posns that are
+the neighbors of the given cell.
+
+This should, for example, pass the following tests:
+
+```racket
+(check-expect
+ (sort (generate-neighbors (make-posn 7 3)) posn<)
+ (sort (list (make-posn 6 2)
+             (make-posn 6 3)
+             (make-posn 6 4)
+             (make-posn 7 2)
+             (make-posn 7 4)
+             (make-posn 8 2)
+             (make-posn 8 3)
+             (make-posn 8 4)) posn<))
+(check-expect
+ (sort (generate-neighbors (make-posn 0 0)) posn<)
+ (sort (list (make-posn 1 1)
+             (make-posn 1 0)
+             (make-posn 1 -1)
+             (make-posn -1 1)
+             (make-posn -1 0)
+             (make-posn -1 -1)
+             (make-posn 0 1)
+             (make-posn 0 -1)) posn<))
+```
+
+(Note the use of `sort` here so that the tests will pass
+if you return the correct `posn`s regardless of their
+order.)
+
+There are many reasonable ways you can do this.
+One is to generate a list of eight `posn`s representing
+the eight offsets from a given cell, and then use
+the `shift-cell-list` function you just wrote to apply
+all those to the given cell. You can do that with `map`
+in a nice way, or you can use explicit recursion if
+you prefer.
+
+### Exercise 4: `all-neighbors`
+
+![The Racket icon](../favicon-32x32.png)
+Write a function `all-neighbors` that takes a world
+state (a list of cells/posns) and retuns a new list
+of cells/posns that is all the neighbors of every
+cell in the given world state. Note that some cells
+may appear multiple times in the list; this is
+desirable and important.
+
+Below is a test for a world state containing two cells
+with a blank cell between them. Note that there are
+several duplicates, namely `(4, 6)`, `(4, 7)`, and
+`(4, 8)`, each of which is a neighbor of both the
+cells in the given world state.
+
+```racket
+(check-expect
+ (sort
+  (all-neighbors
+   (list (make-posn 3 7)
+         (make-posn 5 7))) posn<)
+ (sort
+  (list
+   ; Neighbors of (make-posn 3 7)
+   (make-posn 2 6)
+   (make-posn 2 7)
+   (make-posn 2 8)
+   (make-posn 3 6)
+   (make-posn 3 8)
+   (make-posn 4 6)
+   (make-posn 4 7)
+   (make-posn 4 8)
+   ; Neighbors of (make-posn 5 7)
+   (make-posn 4 6)
+   (make-posn 4 7)
+   (make-posn 4 8)
+   (make-posn 5 6)
+   (make-posn 5 8)
+   (make-posn 6 6)
+   (make-posn 6 7)
+   (make-posn 6 8)) posn<))
+```
+
+And here's a test where the given world state is a
+horizontal blinker:
+
+```racket
+(check-expect
+ (sort
+  (all-neighbors
+   (list
+    (make-posn 7 2)
+    (make-posn 8 2)
+    (make-posn 9 2))) posn<)
+ (sort (append
+        (generate-neighbors (make-posn 7 2))
+        (generate-neighbors (make-posn 8 2))
+        (generate-neighbors (make-posn 9 2)))
+       posn<))
+```
+
+There's a nice solution to this using `map` and
+`apply append`. Or you could do it with one of the `fold`
+functions. Or you could use explicit recursion. So many
+options!
