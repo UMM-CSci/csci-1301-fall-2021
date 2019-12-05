@@ -62,7 +62,7 @@ Consider this test:
  x-coordinate and 3 (i.e., `7 + -4`) for the
  new y-coodinate.
 
- ### Exercise 1:`shift-cell`
+### Exercise 1:`shift-cell`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `shift-cell` that takes two `posn`s
