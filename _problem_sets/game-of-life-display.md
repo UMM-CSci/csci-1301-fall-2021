@@ -74,7 +74,7 @@ for that. Again, you'll want to copy this into your Racket file so you
 can use it to display random world states.
 
 We'll start with a function `make-all-cells` that creats all the
-posns in the given range. This is a fairly complex use of `foldl`,
+posns in the given range. This is a fairly complex use of `apply`,
 `build-list` and multiple `lambda`s, so definitely ask questions if
 you're not clear what's happening here.
 
