@@ -84,7 +84,7 @@ you're not clear what's happening here.
 ; and [0, y-max - 1) respectively.
 ; make-all-cells: number, number -> [posn]
 (define (make-all-cells x-max y-max)
-  (foldl append '()
+  (apply append
          (build-list
           x-max
           (lambda (x)
