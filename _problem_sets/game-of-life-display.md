@@ -262,7 +262,7 @@ help to look at a diagram:
 
 Here the center of cell (0, 0) will be
 
-```
+```racket
    (world-padding, world-padding)
 ```
 

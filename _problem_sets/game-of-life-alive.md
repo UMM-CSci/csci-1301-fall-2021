@@ -5,7 +5,7 @@ date:   2019-11-30 11:28:34 -0500
 status: draft
 ---
 
-## Game of Life live cells <!-- omit in toc -->
+## Game of Life: Live cells <!-- omit in toc -->
 
 In our previous work on our implementation of
 [Conway's Game of Life](game-of-life.html) in Racket, we implemented
@@ -65,7 +65,7 @@ most types.
 Now that we can count how many times a _single_ value occurs in a list, we want
 to write a function `frequencies` that takes a list of values and returns a
 list of lists that tell us how many times _every_ value in the list occurs.
-The output should be a list of pairs, where each pair has a _value_ and a 
+The output should be a list of pairs, where each pair has a _value_ and a
 _count_ (how many times that value appears in the input list).
 
 We could just use `list`s of two items for these pairs, but defining a `struct`
@@ -153,7 +153,7 @@ to do the following:
 Note that we removed the second occurrence of `(make-posn 3 5)` from
 our list before recursing. If we didn't do that our result would end up with
 _two_ `count-pair`s for `(make-posn 3 5)`; the first would have count 2, and
-then the second would have count 1. 
+then the second would have count 1.
 
 You might find it useful to use the "build-in" function `remove-all` to take
 care of removing all occurrences of the first `posn` from the `rest` of the
@@ -161,3 +161,101 @@ list.
 
 This solution to this is short, but can be a little tricky. Be careful
 about the types of things and that should help a lot.
+
+## What does it mean to be alive?
+
+Now that we can count neighbors, it's time to decide which of these cells
+will be alive in the next generation.
+
+### Exercise 4: `alive?`
+
+![The Racket icon](../favicon-32x32.png)
+Write a function `alive?` that takes a world state (i.e., a list of cells/
+posns) and a `count-pair` and returns `#true` if that cell in that `count-pair`
+will be alive in the generate, and `#false` if it's not.
+
+We need the world state as an argument to `alive?` because we need to know
+whether this cell is _currently_ alive (i.e., in the world state) since the
+rules are different for cells that are currently alive and cells that aren't.
+
+As reminder, the rules are:
+
+- Any live cell with two or three neighbors survives.
+- Any dead cell with three live neighbors becomes a live
+  cell.
+- All other live cells die in the next generation.
+  Similarly, all other dead cells stay dead.
+
+Below are a few examples in the form of `check-expect` tests; this is _not_
+a complete set of tests, and you should make sure to extend these to a more
+complete set. Note that I've used some of our pre-defined world states like
+`blinker` here to simplify creating the world state.
+
+```racket
+; (1, 1) isn't currently alive (it's not in the list of cells in `blinker`), but
+; has three neighbors, so it will be alive in the next generation.
+(check-expect
+ (alive? blinker (make-count-pair (make-posn 1 1) 3))
+ #true)
+
+; (1, 1) isn't currently alive in `glider`. It has *five* live neighbors,
+; though, which is too many so it's still not going to be alive in the
+; next generation.
+(check-expect
+ (alive? glider (make-count-pair (make-posn 1 1) 5))
+ #false)
+```
+
+First, note that any cell that can
+be alive in the next generation _must_ be in our `all-neighbors` list since
+it has to have 2 or 3 live neighbors.
+
+### Exercise 5: `live-pairs`
+
+![The Racket icon](../favicon-32x32.png)
+Write a function `live-pairs` that takes a world state (i.e., a list of cells/
+posns) and list of `count-pair`s and returns the sub-list of `count-pair`s that
+contain cells that should be alive in the next generation.
+
+`filter` is a great tool for this job.
+
+### Exercise 6: `next-generation`
+
+![The Racket icon](../favicon-32x32.png)
+Write a function `next-generation` that takes a world state (i.e., a list of
+cells/posns) and returns a new world state that is the list of cells/posns that
+will be alive in the next generation.
+
+This can be accomplished by:
+
+- Calling `all-neighbors` on the current world state.
+- Passing that list of neighbors to `frequencies` to create list
+  of `count-pairs` for the current world state.
+- Passing that frequency list and the current world state to `live-pairs`
+  to get it down to just the pairs with cells that will be alive in the
+  next generation.
+- Extracting all the cells/posns from that list. (`map` would be very
+  helpful here.)
+
+Here are a few tests; you probably want to add some more:
+
+```racket
+(check-expect
+ (next-generation blinker)
+ (list (make-posn -1 1)
+       (make-posn 0 1)
+       (make-posn 1 1)))
+
+; Blinker returns to the same state every two generations
+; so calling `next-generation` twice should get us back
+; to where we started.
+(check-expect
+ (next-generation (next-generation blinker))
+ blinker)
+
+; Glider moves down one row and to the right one row every
+; four generations.
+(check-expect
+ (sort (next-generation (next-generation (next-generation (next-generation glider)))) posn<)
+ (sort (shift-cell-list glider (make-posn 1 1)) posn<))
+```
