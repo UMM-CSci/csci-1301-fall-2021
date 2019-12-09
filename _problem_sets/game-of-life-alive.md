@@ -2,7 +2,6 @@
 layout: problem_set
 title:  "Game of Life 3: Live cells"
 date:   2019-11-30 11:28:34 -0500
-status: draft
 ---
 
 ## Game of Life: Live cells <!-- omit in toc -->
@@ -17,6 +16,16 @@ of Life.
 
 Make sure you write descriptions and signatures for all your functions,
 and add more tests as you think it necessary or helpful.
+
+- [Counting number of occurrences](#counting-number-of-occurrences)
+  - [Exercise 1: `num-occurrences`](#exercise-1-num-occurrences)
+- [Frequency counts](#frequency-counts)
+  - [Exercise 2: `count-pair<`](#exercise-2-count-pair)
+  - [Exercise 3: `frequencies`](#exercise-3-frequencies)
+- [What does it mean to be alive?](#what-does-it-mean-to-be-alive)
+  - [Exercise 4: `alive?`](#exercise-4-alive)
+  - [Exercise 5: `live-pairs`](#exercise-5-live-pairs)
+  - [Exercise 6: `next-generation`](#exercise-6-next-generation)
 
 ## Counting number of occurrences
 
