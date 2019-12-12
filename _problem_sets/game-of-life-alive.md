@@ -185,7 +185,9 @@ will be alive in the generate, and `#false` if it's not.
 
 We need the world state as an argument to `alive?` because we need to know
 whether this cell is _currently_ alive (i.e., in the world state) since the
-rules are different for cells that are currently alive and cells that aren't.
+rules are different for cells that are currently alive and cells that aren't. You might find the built-in function
+`member?` useful for determining if a given cell/posn
+is in the current world state or not.
 
 As reminder, the rules are:
 
@@ -215,7 +217,7 @@ complete set. Note that I've used some of our pre-defined world states like
  #false)
 ```
 
-First, note that any cell that can
+Note that any cell that can
 be alive in the next generation _must_ be in our `all-neighbors` list since
 it has to have 2 or 3 live neighbors.
 
