@@ -1,6 +1,6 @@
 ---
 layout: problem_set
-title:  "Game of Life 0: overview"
+title:  "Game of Life 0: Overview"
 date:   2019-11-29 10:28:34 -0500
 ---
 
