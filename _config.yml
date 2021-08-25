@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: UMM CSci 1301, Fall 2019
+title: UMM CSci 1301, Fall 2021
 email: mcphee@morris.umn.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Problem sets, labs, and other materials for the Fall, 2019, edition of
+  Problem sets, labs, and other materials for the Fall, 2021, edition of
   CSci 1301 at the University of Minnesota Morris.
-baseurl: "/csci-1301-fall-2019" # the subpath of your site, e.g. /blog
+baseurl: "/csci-1301-fall-2021" # the subpath of your site, e.g. /blog
 url: "http://https://umm-csci.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: NicMcPhee
 github_username:  NicMcPhee

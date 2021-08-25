@@ -1,14 +1,14 @@
 ---
 layout: problem_set
 title:  "Problem Set 4"
-date:   2019-11-04 10:28:34 -0500
+date:   2021-11-04 10:28:34 -0500
 categories: racket problem_set
 ---
 
 ## Background <!-- omit in toc -->
 
-Read [Chapter 9 of the book,](https://htdp.org/2019-02-24/part_two.html#%28part._ch~3adesign-lists%29)
-paying attention to the [design recipe for lists](https://htdp.org/2019-02-24/part_two.html#%28counter._%28figure._fig~3atemplate-q%29%29)
+Read [Chapter 9 of the book,](https://htdp.org/2021-5-4/Book/part_two.html#%28part._ch~3adesign-lists%29)
+paying attention to the [design recipe for lists](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28figure._fig~3atemplate-q%29%29)
 which summarizes and rephrases the same thing we were discussing in
 class.
 
@@ -29,7 +29,7 @@ Make sure that every function has a signature, description, and test cases (as n
 
 ### Problem 1
 
-Start with [Exercise 140](https://htdp.org/2019-02-24/part_two.html#%28counter._%28exercise._list-and%29%29)
+Start with [Exercise 140](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28exercise._list-and%29%29)
 from the course text. There are two functions to define here –
 `all-true` and `one-true` – make sure you do them both.
 
@@ -44,7 +44,7 @@ are examples of filtering.
 
 ### Problem 2
 
-[Exercise 169](https://htdp.org/2019-02-24/part_two.html#%28counter._%28exercise._work3%29%29), where you
+[Exercise 169](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28exercise._work3%29%29), where you
   keep `posn`s that match a criteria.
 
 ### Problem 3
@@ -75,7 +75,7 @@ Here we'll have two problem that are examples of mapping.
 
 ### Problem 4
 
-[Exercise 170](https://htdp.org/2019-02-24/part_two.html#%28counter._%28exercise._work4%29%29) from the textbook, where you replace
+[Exercise 170](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28exercise._work4%29%29) from the textbook, where you replace
 all the area codes in a list of phone numbers with a new area code. (This is the kind
 of thing you'd need to do [when you split an area code](https://en.wikipedia.org/wiki/Area_codes_713,_281,_346,_and_832), 
 as you'd need to give roughly half the numbers the new area code.)

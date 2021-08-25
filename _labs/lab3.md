@@ -1,7 +1,7 @@
 ---
 layout: lab
 title:  "Lab 3"
-date:   2019-10-09 10:28:34 -0500
+date:   2021-10-09 10:28:34 -0500
 categories: racket lab
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: lab
 title:  "Lab 1"
-date:   2019-08-13 10:28:34 -0500
+date:   2021-08-13 10:28:34 -0500
 tags: [expressions, functions]
 ---
 

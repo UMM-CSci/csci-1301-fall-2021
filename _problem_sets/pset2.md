@@ -1,7 +1,7 @@
 ---
 layout: problem_set
 title:  "Problem Set 2"
-date:   2019-08-13 10:28:34 -0500
+date:   2021-08-13 10:28:34 -0500
 categories: racket functions images strings
 ---
 
@@ -59,7 +59,7 @@ string is empty (`""`). That should pass this new test as well:
 ### Problem 2 (3 exercises – 15 points)
 
 Read the step-by-step design process in [Section
-3.1](https://htdp.org/2019-02-24/part_one.html#%28part._sec~3adesign-func%29).
+3.1](https://htdp.org/2021-5-4/Book/part_one.html#%28part._sec~3adesign-func%29).
 Note that we write our examples as check-expects rather than in
 comments. Also note that for now we will skip writing a stub for simple
 functions, but you would want to do it for more complex ones when you are
@@ -68,11 +68,11 @@ less certain about what may go into the expression in the function.
 Using this structure, develop solutions to the following three exercises:
 
 - [Exercise 36 (5
-points)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._design3%29%29)
+points)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._design3%29%29)
 - [Exercise 37 (5
-points)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._design4%29%29)
+points)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._design4%29%29)
 - [Exercise 38 (5
-points)](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._design5%29%29)
+points)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._design5%29%29)
 
 Make sure to follow all steps of the design recipe, and phrase your
 "expected cases" as `check-expect` tests.

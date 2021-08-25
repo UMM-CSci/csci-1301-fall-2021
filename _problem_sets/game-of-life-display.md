@@ -1,7 +1,7 @@
 ---
 layout: problem_set
 title:  "Game of Life 1: Display"
-date:   2019-11-29 11:28:34 -0500
+date:   2021-11-29 11:28:34 -0500
 ---
 
 ## Game of Life display <!-- omit in toc -->

@@ -4,7 +4,7 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
-This is the course syllabus for Nic McPhee\'s Fall 2019 Problem solving
+This is the course syllabus for Nic McPhee\'s Fall 2021 Problem solving
 and algorithm development (CSci 1301) course at the [University of
 Minnesota, Morris](http://www.morris.umn.edu). For additional
 information (e.g., events and assignments) see [the course Canvas
@@ -18,18 +18,18 @@ prior experience with computer programming.
 
 - [Course description](#course-description)
 - [Course goals and learning objectives](#course-goals-and-learning-objectives)
-- [Nic's Fall, 2019, office hours](#nics-fall-2019-office-hours)
+- [Nic's Fall, 2021, office hours](#nics-fall-2021-office-hours)
 - [Nic's contact info](#nics-contact-info)
 - [Texts and other materials](#texts-and-other-materials)
 - [Course outline](#course-outline)
 - [Course work and grading](#course-work-and-grading)
-	- [Grading standards (definition of grades)](#grading-standards-definition-of-grades)
-	- [Senate academic workload policy](#senate-academic-workload-policy)
+  - [Grading standards (definition of grades)](#grading-standards-definition-of-grades)
+  - [Senate academic workload policy](#senate-academic-workload-policy)
 - [General policies and information](#general-policies-and-information)
-	- [Accessibility and institutional support](#accessibility-and-institutional-support)
-	- [Harassment](#harassment)
-	- [Equity, diversity, equal opportunity, and affirmative action](#equity-diversity-equal-opportunity-and-affirmative-action)
-	- [Academic Integrity](#academic-integrity)
+  - [Accessibility and institutional support](#accessibility-and-institutional-support)
+  - [Harassment](#harassment)
+  - [Equity, diversity, equal opportunity, and affirmative action](#equity-diversity-equal-opportunity-and-affirmative-action)
+  - [Academic Integrity](#academic-integrity)
 
 <!-- /TOC -->
 
@@ -101,11 +101,11 @@ Some of the key learning goals in this course include:
     how a computer works
 
 We should be able to cover significant ports of [the
-course text](https://htdp.org/2019-02-24/). There is no expectation in this course that you\'ve had any
+course text](https://htdp.org/2021-5-4/Book/). There is no expectation in this course that you\'ve had any
 prior programming experience. We\'ll do most of the programming in this
 class using the Racket programming language.
 
-# Nic's Fall, 2019, office hours
+# Nic's Fall, 2021, office hours
 
 My office hours for Fall, 2015, are:
 
@@ -149,14 +149,14 @@ This course has 1 required text:
 
 -   *How to design programs, SECOND EDITION* (often abbreviated HtDP2e) by Felleisen, Findler, Flatt, and Krishnamurthi
     -   This is available freely on-line, and this edition is *only*
-        available on-line: <https://htdp.org/2019-02-24/>
+        available on-line: <https://htdp.org/2021-5-4/Book/>
     -   :warning: **Don\'t buy a printed copy of the first edition
         unless you really want to.** The second edition is *very*
         different, and the course really won\'t make a lot of sense is
         you\'ve got an old copy of the book.
 
 There will be various other on-line materials, mostly shared via Canvas
-or on [the resources page](https://umm-csci.github.io/csci-1301-fall-2019/resources/).
+or on [the resources page](https://umm-csci.github.io/csci-1301-fall-2021/resources/).
 
 Since this course is ultimately about problem solving, having other
 sources of problems to play with can be helpful. A few that support Racket
@@ -174,9 +174,6 @@ sources of problems to play with can be helpful. A few that support Racket
     other specific language. That said, it tends to be pretty heavy on
     text processing, which is something Racket can do just fine, but
     isn\'t something our text emphasizes.
--   [Google Code Jam](http://code.google.com/codejam/contests.html) is
-    an excellent set of programming-contest-style problems, and they\'re
-    language agnostic.
 
 # Course outline
 

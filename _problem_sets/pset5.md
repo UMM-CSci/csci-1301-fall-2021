@@ -1,7 +1,7 @@
 ---
 layout: problem_set
 title:  "Problem Set 5"
-date:   2019-11-20 10:28:34 -0500
+date:   2021-11-20 10:28:34 -0500
 categories: racket problem_set
 ---
 
@@ -10,7 +10,7 @@ signature, description, and test cases (as needed).
 
 ## Abstracting away duplication
 
-[Exercise 250](https://htdp.org/2019-02-24/part_three.html#%28counter._%28exercise._ex~3aabs-tabulate%29%29).
+[Exercise 250](https://htdp.org/2021-5-4/Book/part_three.html#%28counter._%28exercise._ex~3aabs-tabulate%29%29).
 Before you write the function, copy `tab-sin` and `tab-sqrt` into your
 Racket file. Then:
 
@@ -48,7 +48,7 @@ You can (and should!) use helper functions when the
 function that you need you need to pass to one of these isn't already
 defined in Racket. Alternatively you may use `lambda` if you would like
 (see [section
-17.1](https://htdp.org/2019-02-24/part_three.html#%28part._sec~3aint-lambda%29)
+17.1](https://htdp.org/2021-5-4/Book/part_three.html#%28part._sec~3aint-lambda%29)
 in the book).
 
 Some of these can be done with a single call to one of these nifty
