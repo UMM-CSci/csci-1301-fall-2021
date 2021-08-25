@@ -12,12 +12,12 @@ gem "jekyll", "~> 3.9.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
-gem "jekyll-theme-slate", "~> 0.1.1"
+gem "jekyll-theme-slate", "~> 0.2.0"
 gem "jekyll-swiss", "~> 1.0.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", "~> 212", group: :jekyll_plugins
+gem "github-pages", "~> 219", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -35,3 +35,7 @@ end
 gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 
 gem "webrick", "~> 1.7"
+
+# This addresses a vulneratility flagged by Dependabot:
+# https://github.com/UMM-CSci/csci-1301-fall-2019/security/dependabot/Gemfile.lock/kramdown/open
+gem "kramdown", ">= 2.3.1"
