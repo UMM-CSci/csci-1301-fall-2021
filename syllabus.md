@@ -200,7 +200,6 @@ If I leave the office during office hours I\'ll try to leave a note on
 my door telling you where I am, but you should always feel free to check
 the labs if you\'re looking for me.
 
-
 ## Nic's contact info
 
 Email (mcphee@…) is my preferred method of contact, but be warned that I get a
