@@ -1,7 +1,7 @@
 ---
 layout: problem_set
 title:  "Problem Set 3"
-date:   2019-10-15 10:28:34 -0500
+date:   2021-10-15 10:28:34 -0500
 categories: racket problem_set
 ---
 
@@ -16,7 +16,7 @@ always) test cases.
 
 ## Traffic lights
 
-Do [Exercise 51](https://htdp.org/2019-02-24/part_one.html#%28counter._%28exercise._cond3%29%29).
+Do [Exercise 51](https://htdp.org/2021-02-24/part_one.html#%28counter._%28exercise._cond3%29%29).
 
 To be honest, it's not entirely clear what the textbook's authors
 intend by the phrase "for a given duration". I'm going to take that
@@ -36,7 +36,7 @@ and then back to a red circle, etc., etc.
 
 The question then is what we want the world state to be. There are a
 number of reasonable options here, but I recommend a state that is
-a structure combining the current light color and how many ticks that color has been displayed. The light color the [enumeration](https://htdp.org/2019-02-24/part_one.html#%28part._sec~3aenums%29) 
+a structure combining the current light color and how many ticks that color has been displayed. The light color the [enumeration](https://htdp.org/2021-02-24/part_one.html#%28part._sec~3aenums%29) 
 "green", "yellow", and "red", and the number of ticks is a number,
 so we have a structure like:
 

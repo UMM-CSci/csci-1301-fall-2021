@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-These are the problem sets, labs, and other materials for the Fall, 2019,
+These are the problem sets, labs, and other materials for the Fall, 2021,
 edition of
 [CSci](https://academics.morris.umn.edu/majorminor-planning-tips/computer-science)
 1301 at the [University of Minnesota Morris](https://www.morris.umn.edu).
@@ -18,4 +18,4 @@ Most of this material was
 and then converted to GitHub Pages and updated by [@NicMcPhee](https://github.com/NicMcPhee).
 
 The source for this is at
-[https://github.com/UMM-CSci/csci-1301-fall-2019](https://github.com/UMM-CSci/csci-1301-fall-2019).
+[https://github.com/UMM-CSci/csci-1301-fall-2021](https://github.com/UMM-CSci/csci-1301-fall-2021).

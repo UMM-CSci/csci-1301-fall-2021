@@ -1,7 +1,7 @@
 ---
 layout: lab
 title:  "Lab 7"
-date:   2019-12-10 10:28:34 -0500
+date:   2021-12-10 10:28:34 -0500
 categories: racket lab
 status: draft
 ---
@@ -67,11 +67,11 @@ functions.
 
 In this task you will be using `map` and `filter` general functions
 given
-[here](https://htdp.org/2019-02-24/part_three.html#%28part._ch~3a3use%29)
+[here](https://htdp.org/2021-02-24/part_three.html#%28part._ch~3a3use%29)
 to perform different tasks. You can use helper functions when the
 functions that you need you need to pass to `map` or `filter` aren\'t
 defined in Racket. You may use `lambda` if you would like (see [section
-17.1](https://htdp.org/2019-02-24/part_three.html#%28part._sec~3aint-lambda%29)
+17.1](https://htdp.org/2021-02-24/part_three.html#%28part._sec~3aint-lambda%29)
 in the book), but this is by no means required.
 
 Below are a couple of examples for using the predefined functions

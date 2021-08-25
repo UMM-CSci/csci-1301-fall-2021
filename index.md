@@ -4,7 +4,7 @@
 
 layout: home
 # layout: default
-# title: UMM CSci 1301, Fall 2019
+# title: UMM CSci 1301, Fall 2021
 attribution: >
   <a href="http://cda.morris.umn.edu/~elenam/1301fall2018/index.html">
     Originally written by @elenam</a>,
@@ -12,7 +12,7 @@ attribution: >
 ---
 
 Welcome to the problem sets and labs for UMM CSci 1301,
-Fall 2019!
+Fall 2021!
 
 # Problem sets
 

@@ -1,7 +1,7 @@
 ---
 layout: problem_set
 title:  "Problem Set 6"
-date:   2019-12-01 10:28:34 -0500
+date:   2021-12-01 10:28:34 -0500
 categories: racket problem_set
 status: draft
 ---
@@ -23,7 +23,7 @@ given data and you don\'t know how to fix it.
 ### Self-referential structure (16 points total)
 
 1.  Given the `family tree` structure in defined in [Section
-    19.1](https://htdp.org/2019-02-24/part_four.html#%28part._sec~3abtrees%29),
+    19.1](https://htdp.org/2021-02-24/part_four.html#%28part._sec~3abtrees%29),
     write a function `ft-has-color?` that takes a family tree and a
     color and returns true if that family tree has a person with that
     color of eyes, and false otherwise.
