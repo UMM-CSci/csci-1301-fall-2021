@@ -14,7 +14,7 @@ all your group members (in comments) at the start of your Racket file(s).
 
 Your task is to write a simple animation, something similar to (and
 building upon) the rocket landing example from
-[Prologue](https://htdp.org/2021-02-24/part_prologue.html) which is
+[Prologue](https://htdp.org/2021-5-4/Book/part_prologue.html) which is
 also posted [here](http://cda.morris.umn.edu/~elenam/1301fall2018/examples/rocket-example.rkt).
 We also have [several examples of animations from class](https://canvas.umn.edu/files/8423073/download?download_frd=1) (requires logging in to Canvas).
 [Here is another example of an animation.](http://cda.morris.umn.edu/~elenam/1301fall2018/examples/simple-animation.rkt)

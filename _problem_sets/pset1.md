@@ -21,18 +21,18 @@ how to submit your work.
 # Exercises
 
 Do these exercises from [Section
-2.1](https://htdp.org/2021-02-24/part_one.html#%28part._sec~3afuncs%29) of
+2.1](https://htdp.org/2021-5-4/Book/part_one.html#%28part._sec~3afuncs%29) of
 the course text.
 
    * [Exercise 12 (3
-pts)](https://htdp.org/2021-02-24/part_one.html#%28counter._%28exercise._fun1%29%29)
+pts)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._fun1%29%29)
       * You do *not* need to define `csurface`.
    * [Exercise 14 (3
-pts)](https://htdp.org/2021-02-24/part_one.html#%28counter._%28exercise._fun3%29%29)
+pts)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._fun3%29%29)
    * [Exercise 17 (4
-pts)](https://htdp.org/2021-02-24/part_one.html#%28counter._%28exercise._fun10%29%29)
+pts)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._fun10%29%29)
       * It's fine to implement just `tall` and `wide`, and not `square`.
    * [Exercise 18 (4
-pts)](https://htdp.org/2021-02-24/part_one.html#%28counter._%28exercise._fun10a%29%29),
+pts)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._fun10a%29%29),
    * [Exercise 19 (4
-pts)](https://htdp.org/2021-02-24/part_one.html#%28counter._%28exercise._fun10b%29%29)
+pts)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._fun10b%29%29)

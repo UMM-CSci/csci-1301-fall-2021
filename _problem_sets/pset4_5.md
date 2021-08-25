@@ -12,16 +12,16 @@ test cases (as needed).
 ### Problem 1
 
 Read [Chapter 9 of the
-book,](https://htdp.org/2021-02-24/part_two.html#%28part._ch~3adesign-lists%29)
+book,](https://htdp.org/2021-5-4/Book/part_two.html#%28part._ch~3adesign-lists%29)
 paying attention to the [design recipe for
-lists](https://htdp.org/2021-02-24/part_two.html#%28counter._%28figure._fig~3atemplate-q%29%29)
+lists](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28figure._fig~3atemplate-q%29%29)
 (it summarizes and rephrases the same thing we were discussing in
 class).\
 Then do the following problems, including the check-expect tests,
 signatures, descriptions, and then the implementation:
 
 1.  [Exercise
-    140](https://htdp.org/2021-02-24/part_two.html#%28counter._%28exercise._list-and%29%29)
+    140](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28exercise._list-and%29%29)
     (5 points).
 2.  A function that takes a list of strings and produces the sum of
     their lengths (5 points).
@@ -33,10 +33,10 @@ signatures, descriptions, and then the implementation:
 ### Problem 2
 
 1.  [Exercise
-    169](https://htdp.org/2021-02-24/part_two.html#%28counter._%28exercise._work3%29%29)
+    169](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28exercise._work3%29%29)
     (5 points)
 2.  [Exercise
-    170](https://htdp.org/2021-02-24/part_two.html#%28counter._%28exercise._work4%29%29)
+    170](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28exercise._work4%29%29)
     (5 points)
 3.  Write a function that takes a list of strings and returns a list of
     their length (3 points).
@@ -47,17 +47,17 @@ signatures, descriptions, and then the implementation:
 ### Problem 3
 
 Read [Section
-11.3](https://htdp.org/2021-02-24/part_two.html#%28part._sec~3asort.I%29)
+11.3](https://htdp.org/2021-5-4/Book/part_two.html#%28part._sec~3asort.I%29)
 in the textbook and do the following exercises:
 
 1.  [Exercise
-    187](https://htdp.org/2021-02-24/part_two.html#%28counter._%28exercise._ex~3asort1-b%29%29)
+    187](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28exercise._ex~3asort1-b%29%29)
     (4 points)
 2.  [Exercise
-    188](https://htdp.org/2021-02-24/part_two.html#%28counter._%28exercise._ex~3asort1%29%29)
+    188](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28exercise._ex~3asort1%29%29)
     (4 points)
 3.  [Exercise
-    190](https://htdp.org/2021-02-24/part_two.html#%28counter._%28exercise._ex~3aprefix-bsl%29%29)
+    190](https://htdp.org/2021-5-4/Book/part_two.html#%28counter._%28exercise._ex~3aprefix-bsl%29%29)
     (write both `prefixes` and `suffixes` functions) (9 points). Make
     sure to start with check-expects and a signature. Note that the
     function **needs a recursive helper function**. Don\'t forget to

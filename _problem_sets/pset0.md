@@ -19,15 +19,15 @@ how to submit your work.
 # Exercises
 
 Do these exercises from
-[Chapter 1](https://htdp.org/2021-02-24/part_one.html)
+[Chapter 1](https://htdp.org/2021-5-4/Book/part_one.html)
 of the course text:
 
    * [Exercise 3 (3
-pts)](https://htdp.org/2021-02-24/part_one.html#%28counter._%28exercise._arith-s1%29%29)
+pts)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._arith-s1%29%29)
    * [Exercise 4 (3
-pts)](https://htdp.org/2021-02-24/part_one.html#%28counter._%28exercise._arith-s2%29%29)
+pts)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._arith-s2%29%29)
    * [Exercise 8 (5
-pts)](https://htdp.org/2021-02-24/part_one.html#%28counter._%28exercise._arith-b2%29%29)
+pts)](https://htdp.org/2021-5-4/Book/part_one.html#%28counter._%28exercise._arith-b2%29%29)
       * In exercise 8 it's fine to implement just `tall` and `wide`, and not `square`.
 
 In all three of these the essential idea is to define named expressions, like

@@ -101,7 +101,7 @@ Some of the key learning goals in this course include:
     how a computer works
 
 We should be able to cover significant ports of [the
-course text](https://htdp.org/2021-02-24/). There is no expectation in this course that you\'ve had any
+course text](https://htdp.org/2021-5-4/Book/). There is no expectation in this course that you\'ve had any
 prior programming experience. We\'ll do most of the programming in this
 class using the Racket programming language.
 
@@ -149,7 +149,7 @@ This course has 1 required text:
 
 -   *How to design programs, SECOND EDITION* (often abbreviated HtDP2e) by Felleisen, Findler, Flatt, and Krishnamurthi
     -   This is available freely on-line, and this edition is *only*
-        available on-line: <https://htdp.org/2021-02-24/>
+        available on-line: <https://htdp.org/2021-5-4/Book/>
     -   :warning: **Don\'t buy a printed copy of the first edition
         unless you really want to.** The second edition is *very*
         different, and the course really won\'t make a lot of sense is
@@ -174,9 +174,6 @@ sources of problems to play with can be helpful. A few that support Racket
     other specific language. That said, it tends to be pretty heavy on
     text processing, which is something Racket can do just fine, but
     isn\'t something our text emphasizes.
--   [Google Code Jam](http://code.google.com/codejam/contests.html) is
-    an excellent set of programming-contest-style problems, and they\'re
-    language agnostic.
 
 # Course outline
 

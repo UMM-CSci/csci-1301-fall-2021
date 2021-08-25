@@ -6,7 +6,7 @@ permalink: /resources/
 
 * [How to install DrRacket on your own gear](https://canvas.umn.edu/courses/125452/pages/installing-drracket-on-your-own-gear)
    * Not actually necessary, but some people find it useful
-* [How to design program, 2nd edition](https://htdp.org/2021-02-24/)
+* [How to design program, 2nd edition](https://htdp.org/2021-5-4/Book/)
    * This is the course text, which is entirely on-line.
    * The first edition is still available on-line, so make sure you're looking at the second edition.
    * There are various versions of the 2nd edition; I was looking at v7.2.0.5 at the start of the semester
