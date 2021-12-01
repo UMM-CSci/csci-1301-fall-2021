@@ -8,7 +8,7 @@ date:   2021-11-30 10:28:34 -0500
 
 In this part of the assignment, we'll implement
 the idea of the _neighborhood_ of a cell, and counting
-the number of neighbors that a cell has.
+the number of neighbors that a cell has, all
 as part of our implementation of
 [Conway's Game of Life](game-of-life.html) in Racket.
 This is an
@@ -33,11 +33,11 @@ sure what the signature should be for a given function,
 _definitely ask_.
 
 - [Shifting a cell/posn](#shifting-a-cellposn)
-  - [Exercise 1:`shift-cell`](#exercise-1shift-cell)
-  - [Exercise 2: `shift-cell-list`](#exercise-2-shift-cell-list)
+  - [Step 1:`shift-cell`](#step-1shift-cell)
+  - [Step 2: `shift-cell-list`](#step-2-shift-cell-list)
 - [Generating neighbors](#generating-neighbors)
-  - [Exercise 3: `generate-neighbors`](#exercise-3-generate-neighbors)
-  - [Exercise 4: `all-neighbors`](#exercise-4-all-neighbors)
+  - [Step 3: `generate-neighbors`](#step-3-generate-neighbors)
+  - [Step 4: `all-neighbors`](#step-4-all-neighbors)
 
 ## Shifting a cell/posn
 
@@ -62,7 +62,7 @@ Consider this test:
  x-coordinate and 3 (i.e., `7 + -4`) for the
  new y-coodinate.
 
-### Exercise 1:`shift-cell`
+### Step 1:`shift-cell`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `shift-cell` that takes two `posn`s
@@ -70,7 +70,7 @@ and returns a new `posn` that is the result of shifting
 the first by the amounts specified in the second. You
 should certainly pass the test given above, but you want to also include some additional tests.
 
-### Exercise 2: `shift-cell-list`
+### Step 2: `shift-cell-list`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `shift-cell-list` that takes a _list_
@@ -105,6 +105,10 @@ Make sure to provide additional tests; what, for
 example, `shift-cell-list` return if the input list
 is empty?
 
+This is going to take a list of `posn`s and return a list of `posn`s,
+so you're going to need to either do this using recursion or, if
+you're inclined, something like `map`.
+
 ## Generating neighbors
 
 The key action when running the Game of Life is to
@@ -133,7 +137,7 @@ cells, which is terribly inefficient. In the example
 above, only 8 cells have a live neighbor, with 16
 cells (twice as many) having no live neighbors.
 
-This suggests an alternative approach, however. Instead
+This suggests an alternative approach. Instead
 of going to every cell and count its neighbors, go to
 every _live_ cell and make a list of _it's_ neighbors.
 We can then combine all these lists, and see which cells
@@ -169,7 +173,9 @@ That would then lead to the following state:
 
 ![The next generation: A block](../assets/images/Next_gen_block.png)
 
-### Exercise 3: `generate-neighbors`
+We have a block!
+
+### Step 3: `generate-neighbors`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `generate-neighbors` that takes a
@@ -213,7 +219,7 @@ all those to the given cell. You can do that with `map`
 in a nice way, or you can use explicit recursion if
 you prefer.
 
-### Exercise 4: `all-neighbors`
+### Step 4: `all-neighbors`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `all-neighbors` that takes a world

@@ -6,24 +6,24 @@ date:   2021-11-29 11:28:34 -0500
 
 ## Game of Life display <!-- omit in toc -->
 
-In this part of the assignment, we'll implement enough code to display
+In this part of the project, we'll implement enough code to display
 a world state as part of our implementation of
 [Conway's Game of Life](game-of-life.html) in Racket.
 
 There will be a fair bit of set up in the next section, where you'll
 need to copy this code into your Racket file, but you won't have to
 write anything new. After we can make some simple configurations and
-random worlds, however, then you'll get to write some code to implement
-the drawing of a world.
+random worlds, however, and then you'll get to write some code
+to implement the drawing of a world.
 
 ![The Racket icon](../favicon-32x32.png) Look for the Racket icon, which
-we'll use to mark exercises you need to complete.
+we'll use to mark steps you need to complete.
 
 - [The world state and examples](#the-world-state-and-examples)
 - [Building a random state and testing unknown orders](#building-a-random-state-and-testing-unknown-orders)
 - [Drawing a world](#drawing-a-world)
-  - [Exercise 1: `place-cell`](#exercise-1-place-cell)
-  - [Exercise 2:`draw-world`](#exercise-2draw-world)
+  - [Step 1: `place-cell`](#step-1-place-cell)
+  - [Step 2:`draw-world`](#step-2draw-world)
 
 ## The world state and examples
 
@@ -38,8 +38,18 @@ grid. So a world is a list of `posn`s, where each `posn` contains two numbers:
 ;   world: [posn]
 ```
 
-As some examples that will be useful in testing, here are world states
-that represent the _block_, _blinker_, and _glider_ configurations.
+> I'm going to use `[x]` as a shorthand for `list-of-x` for some
+> type `x`. So `[posn]` is shorthand for `list-of-posn`, i.e.,
+>
+> ```racket
+> A list-of-posn is one of:
+> - '()
+> - (cons posn list-of-posn) 
+> ```
+
+So we have some examples that will be useful in testing, here are world states
+that represent the _block_, _blinker_, and _glider_ configurations
+mentioned earlier.
 
 ```racket
 (define block
@@ -81,7 +91,7 @@ you're not clear what's happening here.
 ```racket
 ; make-all-cells makes a list of all the (x, y)
 ; pairs where x and y are in the range [0, x-max - 1]
-; and [0, y-max - 1) respectively.
+; and [0, y-max - 1] respectively.
 ; make-all-cells: number, number -> [posn]
 (define (make-all-cells x-max y-max)
   (apply append
@@ -188,7 +198,7 @@ First, let's define some useful constants:
 ; A little white space between cells.
 (define padding 1)
 
-; The diameter of a cell in pixels, plus a pixel
+; The diameter of a cell in pixels, plus the padding
 ; padding. Each cell's square will be cell-size by cell-size.
 (define cell-size (+ padding (* 2 cell-radius)))
 
@@ -203,7 +213,7 @@ First, let's define some useful constants:
 (define board-padding 20)
 ```
 
-### Exercise 1: `place-cell`
+### Step 1: `place-cell`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `place-cell` that places a cell on a given background
@@ -253,7 +263,8 @@ that I should have added another named constant for that color
 instead of scattering the "magic string" `"blue"` all over the
 code. Alternatively I could have written a `draw-cell` function
 that encapsulates both `"solid"` and `"blue"` so they're only
-in one place. I'll save that for another day.
+in one place. Feel free to make any or all of these improvements
+if you're so inclined.
 
 To understand the math behind the numbers in the tests, it might
 help to look at a diagram:
@@ -295,7 +306,7 @@ and not the "raw" numbers (e.g., 20) when implementing
 like `world-padding` and have the whole drawing system update
 accordingly.
 
-### Exercise 2:`draw-world`
+### Step 2:`draw-world`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `draw-world` that takes a world state (i.e., a

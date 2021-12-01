@@ -6,7 +6,8 @@ date:   2021-11-29 10:28:34 -0500
 
 ## Game of Life overview <!-- omit in toc -->
 
-We're going to wrap up the semester with a set of exercises that
+We're going to wrap up the semester with a project
+consisting of a set of steps that
 collectively build a Racket implementation of
 Conway's Game of Life
 ([the Wikipedia entry](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) is good and recommended).
@@ -23,6 +24,8 @@ in the evolution of
 - [Some sample behaviors](#some-sample-behaviors)
 - [Implementing this in Racket](#implementing-this-in-racket)
   - [The world state: A list of `posn`](#the-world-state-a-list-of-posn)
+  - [Don't forget what you've learned](#dont-forget-what-youve-learned)
+  - [Learn new stuff](#learn-new-stuff)
   - [The structure of the solution](#the-structure-of-the-solution)
 
 ## The rules
@@ -99,6 +102,58 @@ gone over `cons`, `lists`, and the like. A lot of our implementation
 will require processing lists of cells (`posn`s), either through explicit
 recursion or through the use of list processing tools like `map`,
 `filter`, or `foldl`/`foldr`.
+
+### Don't forget what you've learned
+
+Throughout the process remember to use the design
+steps to help you work through the different parts of
+project:
+
+- Include descriptions
+- Include signatures
+- Write tests (except for places where there are lots of random elements, like drawing randomly generated world states)
+- If you're using explicit recursion, sketch out the
+  framework of your recursion, i.e., a `cond` with cases for:
+  - The empty list `'()`
+  - A non-empty list, so `(... (first xs) ... (f (rest xs)) ...)`
+
+There's a fair bit here, so…
+
+- Start early
+- Stay focussed
+- Ask lots of questions.
+- Don't beat your head against any wall for terribly long.
+
+You'll have *some* class time to work on this, but you'll
+probably also need time outside of class to get this
+done.
+
+### Learn new stuff
+
+There's a lot here that we haven't covered, or we've covered only
+briefly. For better or worse, this is the reality of computer
+science. Things move _very_ quickly, and even experienced professionals
+spend a _lot_ of their time reading up on things that they've never
+seen before, have heard of but never used, or used a while ago but
+have forgotten the details of.
+
+If you come across something you've not seen before, look it up.
+Lots of the higher-order function ideas and tools (things like
+`lambda`, `filter`, `map`, and `fold`) are covered in
+[Part III of the textbook](http://htdp.org/2021-11-15/Book/part_three.html), and [the start of Chapter 16](http://htdp.org/2021-11-15/Book/part_three.html#%28part._ch~3a3use%29)
+has a nice summary table.
+
+Also remember that the specific functions are documented in
+["Intermediate Student with Lambda"](https://docs.racket-lang.org/htdp-langs/intermediate-lam.html). Use the index along the left side
+or the "Find" function in your browser to search for a specific
+function like [`filter`](https://docs.racket-lang.org/htdp-langs/intermediate-lam.html#%28def._htdp-intermediate-lambda._%28%28lib._lang%2Fhtdp-intermediate-lambda..rkt%29._filter%29%29).
+
+If all that sounds intimidating, keep in mind that being able to
+do this kind of research is a highly valuable skill that you'll
+use your whole life regardless of whether you end up working
+in computing. Also remember that I'm here to help, so if you
+wander into a swamp and get stuck, just send up a flare and I'll
+come find you and help guide you back onto solid ground.
 
 ### The structure of the solution
 
