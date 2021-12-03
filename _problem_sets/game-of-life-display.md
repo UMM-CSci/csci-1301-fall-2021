@@ -160,7 +160,7 @@ those cells at random to generate a random board:
 ; Each cell in that space has a 50% chance of being
 ; included in the resulting list.
 ; random-world: number, number -> [posn]
-(define (random-board x-max y-max)
+(define (random-world x-max y-max)
   (filter (lambda (c) (zero? (random 2)))
           (make-all-cells x-max y-max)))
 ```
