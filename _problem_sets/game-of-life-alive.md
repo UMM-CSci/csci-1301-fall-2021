@@ -14,18 +14,21 @@ Once we have that, it will be quite straightforward to bring it all
 together with Racket's `big-bang` and we'll have a full, working version
 of Life.
 
+:warning: This is probably the most complex section of the project.
+You should plan accordingly.
+
 Make sure you write descriptions and signatures for all your functions,
 and add more tests as you think it necessary or helpful.
 
 - [Counting number of occurrences](#counting-number-of-occurrences)
-  - [Exercise 1: `num-occurrences`](#exercise-1-num-occurrences)
+  - [Step 1: `num-occurrences`](#step-1-num-occurrences)
 - [Frequency counts](#frequency-counts)
-  - [Exercise 2: `count-pair<`](#exercise-2-count-pair)
-  - [Exercise 3: `frequencies`](#exercise-3-frequencies)
+  - [Step 2: `count-pair<`](#step-2-count-pair)
+  - [Step 3: `frequencies`](#step-3-frequencies)
 - [What does it mean to be alive?](#what-does-it-mean-to-be-alive)
-  - [Exercise 4: `alive?`](#exercise-4-alive)
-  - [Exercise 5: `live-pairs`](#exercise-5-live-pairs)
-  - [Exercise 6: `next-generation`](#exercise-6-next-generation)
+  - [Step 4: `alive?`](#step-4-alive)
+  - [Step 5: `live-pairs`](#step-5-live-pairs)
+  - [Step 6: `next-generation`](#step-6-next-generation)
 
 ## Counting number of occurrences
 
@@ -37,7 +40,7 @@ it includes duplicates, so if a cell is a neighbor of multiple live
 cells, it will be included multiple times in the result, once for each
 live cell it's a neighbor of.
 
-### Exercise 1: `num-occurrences`
+### Step 1: `num-occurrences`
 
 ![The Racket icon](../favicon-32x32.png)
 Our first step in this process is to write a function `num-occurrences` that
@@ -60,10 +63,17 @@ in the given list. For example, it should pass these tests:
  3)
 ```
 
+:information_source: Note that this works for any list, regardless of
+what kinds of things it contains. We'll use it on lists of `posn`s,
+but as the first `check-expect` illustrates, it's a more general
+(& quite useful) tool. One important problem solving skill to develop
+is looking for tools like this that are useful in the moment, but
+can be generalized to be useful in other settings as well.
+
 You can write this pretty easily using `filter` (with a `lambda`) and `length`.
 Or you could use explicit recursion.
 
-The one tricky big is how to check for whether two things are equal here.
+The one tricky bit is how to check for whether two things are equal here.
 Since this should work for objects of essentially any type, we can't use
 type-specific equality tests like `=` or `string=?`. What you want to use is
 the "generic" equality test `equal?` as that will do the "expected" thing for
@@ -100,7 +110,7 @@ list returned by `all-neighbors`. That would mean that the cell (7, 5) would
 be alive in the next generation, regardless of whether it's alive in the
 current generation.
 
-### Exercise 2: `count-pair<`
+### Step 2: `count-pair<`
 
 ![The Racket icon](../favicon-32x32.png)
 To help out with our tests later, it'll be useful to have a `count-pair<`
@@ -109,6 +119,9 @@ should take two `count-pair`s and return `#true` if the `value` of the first
 pair is less than the `value` of the second pair, and #false otherwise.
 (Unlike with `posn<`, we _don't_ need to compare the `count`s if the `value`s
 are equal.)
+
+:warning: Make sure you use `posn<` to do most of the actual work; don't repeat
+that logic here.
 
 You _do_ need to assume that the `value` is going to be a `posn` since that's
 what we're going to be using as values later. It should, for example, pass
@@ -120,13 +133,16 @@ what we're going to be using as values later. It should, for example, pass
  #true)
  ```
 
- (You should _definitely_ write more tests than just this for `count-pair<`.)
+:bangbang: (You should _definitely_ write more tests than just this for `count-pair<`.)
 
-### Exercise 3: `frequencies`
+### Step 3: `frequencies`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `frequencies` that takes a list of values of any type and returns a list of `count-pair`s that indicate how many times each distinct
 value occurred in the input list.
+
+:warning: This is perhaps the trickiest definition in the entire
+project. Definitely start it early and ask lots of questions!
 
 As an examples:
 
@@ -164,7 +180,7 @@ our list before recursing. If we didn't do that our result would end up with
 _two_ `count-pair`s for `(make-posn 3 5)`; the first would have count 2, and
 then the second would have count 1.
 
-You might find it useful to use the "build-in" function `remove-all` to take
+You might find it useful to use the "built-in" function `remove-all` to take
 care of removing all occurrences of the first `posn` from the `rest` of the
 list.
 
@@ -176,7 +192,7 @@ about the types of things and that should help a lot.
 Now that we can count neighbors, it's time to decide which of these cells
 will be alive in the next generation.
 
-### Exercise 4: `alive?`
+### Step 4: `alive?`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `alive?` that takes a world state (i.e., a list of cells/
@@ -221,7 +237,7 @@ Note that any cell that can
 be alive in the next generation _must_ be in our `all-neighbors` list since
 it has to have 2 or 3 live neighbors.
 
-### Exercise 5: `live-pairs`
+### Step 5: `live-pairs`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `live-pairs` that takes a world state (i.e., a list of cells/
@@ -230,7 +246,7 @@ contain cells that should be alive in the next generation.
 
 `filter` is a great tool for this job.
 
-### Exercise 6: `next-generation`
+### Step 6: `next-generation`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `next-generation` that takes a world state (i.e., a list of

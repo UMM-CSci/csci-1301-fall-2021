@@ -9,13 +9,13 @@ date:   2021-11-30 12:28:34 -0500
 Now we have everything we need to run `big-bang`!
 
 - [Game of Life: `big-bang`](#game-of-life-big-bang)
-  - [Exercise 1: `run-life`](#exercise-1-run-life)
+  - [Step 1: `run-life`](#step-1-run-life)
 - [Ways we could fancy this up](#ways-we-could-fancy-this-up)
   - [Add control buttons](#add-control-buttons)
   - [Add the ability to turn cells on or off](#add-the-ability-to-turn-cells-on-or-off)
   - [Handle large numbers of cells more efficiently](#handle-large-numbers-of-cells-more-efficiently)
 
-### Exercise 1: `run-life`
+### Step 1: `run-life`
 
 ![The Racket icon](../favicon-32x32.png)
 Write a function `run-life` that takes an initial world state and calls
@@ -44,6 +44,18 @@ to `(random 20 20)` and you'll perhaps get a more interesting result,
 although it's likely to run more slowly, perhaps _much_ more slowly,
 especially if there are a substantial number of living cells.
 
+:information_source: If your simulations seem to be running really
+slow, with lots of pauses, you *might* be able to speed things up
+by allocating more memory to DrRacket. By default DrRacket is
+limited to 1GB of memory. Assuming your computer has more than that,
+you can go to the `Racket` menu and select the `Limit memory…` option.
+I changed the 1000 MB (i.e., 1GB) limit to 4000 MB (i.e., 4 GB) and
+that sped things up a *little* on my computer. It's still the case,
+though, that if you get a lot of live cells this is going to bog
+down pretty noticeably. This is partly because of choices we've
+made in the programming (mostly in the previous section of the
+write-up), and partly because DrRacket is a big of a memory hog.
+
 Play around and have some fun!
 
 ## Ways we could fancy this up
@@ -55,11 +67,11 @@ want.
 ### Add control buttons
 
 It would be cool, for example, to have play, pause, step forward,
-step backward, etc. buttons, maybe at the bottow of the window underneath
+step backward, etc. buttons, maybe at the bottom of the window underneath
 the "world". This wouldn't be _hard_, but it would require some drawing and
 implementing the click logic in an `on-mouse` function.
 
-You'd also probably need to extend the world state to be a `struct
+You'd also probably need to extend the world state to be a `struct`
 that included a boolean that indicated whether the simulation was running
 or paused, and the list of live cells in the current generation.
 
@@ -78,7 +90,7 @@ space.
 
 ### Handle large numbers of cells more efficiently
 
-The solution outlined in these exercises works and is pretty fast as
+The solution outlined in these steps works and is pretty fast as
 long as you don't have too many live cells spread out across the world.
 If you get a lot of cells scattered about, though, it begins to bog down
 pretty badly.
@@ -87,7 +99,7 @@ pretty badly.
 - Once you identify the bottleneck, how could you make that go faster?
 
 It turns out that this isn't trivial given the tools we have at the moment.
-If you next Data Structures, though, you'll learn about some neat data
+If you take Data Structures next, though, you'll learn about some neat data
 structures like hash tables and binary search trees that might be useful
 in attempting to speed this up. In "full" Racket (i.e., past the student
 languages) there are additional tools that we could use to make things
